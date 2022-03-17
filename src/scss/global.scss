@@ -1,0 +1,15 @@
+@import './variables.scss';
+@import 'bootstrap/dist/css/bootstrap.css';
+@import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+// Style đè lên style bootstarp có sẵn
+// https://bootstrap-vue.org/docs , phần Theming Bootstrap
+
+@font-face {
+  font-family: K2D;
+  src: url('/public/webfonts/K2D-Regular.ttf');
+}
+body {
+  font-family: K2D;
+  color: $color-text;
+}

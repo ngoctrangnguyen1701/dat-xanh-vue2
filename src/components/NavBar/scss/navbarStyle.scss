@@ -1,0 +1,37 @@
+.navbar-item {
+  padding: 0 15px;
+  width: auto;
+  cursor: pointer;
+}
+
+.icon-home {
+  width: 43px;
+  height: 43px;
+  background-color: #064d92;
+  border-radius: 50%;
+  padding: 0;
+
+  color: white;
+  line-height: 43px;
+  text-align: center;
+}
+
+.icon-flag {
+  display: flex;
+  align-items: center;
+
+  .bg-flag {
+    display: inline-block;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.icon-search, .icon-flag {
+  position: relative;
+  cursor: pointer;
+}

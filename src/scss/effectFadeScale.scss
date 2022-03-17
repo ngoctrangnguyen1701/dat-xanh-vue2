@@ -1,0 +1,15 @@
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  // opacity: 1;
+  // transform: scaleX(1); 
+  //--> 2 dòng này khỏi ghi cũng được, bởi vì nó đã là default khi xuất hiện
+  transition: 0.5s ease;
+}
+
+// .fade-scale-enter-from,
+//ở vue2 thì không có 2 chữ from
+.fade-scale-enter,
+.fade-scale-leave-to {
+  opacity: 0;
+  transform: scaleX(0);
+}
