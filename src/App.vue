@@ -4,6 +4,7 @@
     <IntroVideo/>
     <StockComponent/>
     <ActivitiesComponent/>
+    <SystemCompany/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import NavBar from './components/NavBar/NavBar.vue'
 import IntroVideo from './components/IntroVideo.vue'
 import StockComponent from './components/Stock/StockComponent.vue'
 import ActivitiesComponent from './components/Activities/ActivitiesComponent.vue'
+import SystemCompany from './components/SystemCompany/SystemCompany.vue'
 
 export default {
   components: {
@@ -19,6 +21,7 @@ export default {
     IntroVideo,
     StockComponent,
     ActivitiesComponent,
+    SystemCompany,
   }
 }
 </script>
