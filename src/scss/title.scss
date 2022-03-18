@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.title {
+  text-align: center;
+  color: $color-blue1;
+  font-size: 33px;
+  font-weight: bold;
+  
+  p {
+    margin-bottom: 5px;
+  }
+
+  &-line {
+    width: 61px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: $color-blue2;
+  }
+}
