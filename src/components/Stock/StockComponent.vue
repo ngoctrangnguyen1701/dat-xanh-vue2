@@ -14,6 +14,14 @@
     <b-container fluid>
       <b-row>
         <ChartComponent/>
+        <ReportComponent
+          label="BÁO CÁO THƯỜNG NIÊN"
+          imgUrl="https://www.datxanh.vn/assets/uploads/myfiles/images/quan-he-co-dong/baocao2.jpg"
+        />
+        <ReportComponent
+          label="BÁO CÁO TÀI CHÍNH"
+          imgUrl="https://www.datxanh.vn/assets/uploads/myfiles/images/quan-he-co-dong/baocao-tai-chinh-1.jpg"
+        />
       </b-row>
     </b-container>
   </section>
@@ -21,17 +29,17 @@
 
 <script>
 import ChartComponent from './ChartComponent.vue'
+import ReportComponent from './ReportComponent.vue'
 
 export default {
   components: {
     ChartComponent,
+    ReportComponent
   }  
 }
 </script>
 
 <style lang="scss" scope>
-  @import '@/scss/title.scss';
-
   .stock-bg-title {
     background-image: url('https://www.datxanh.vn/template/tint/modules/main/images/bgcodong.jpg');
     background-size: cover;

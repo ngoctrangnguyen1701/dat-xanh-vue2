@@ -3,8 +3,7 @@
     <NavBar/>
     <IntroVideo/>
     <StockComponent/>
-    <!-- <ChartComponent/> -->
-    <!-- <LineChart/> -->
+    <ActivitiesComponent/>
   </div>
 </template>
 
@@ -12,14 +11,18 @@
 import NavBar from './components/NavBar/NavBar.vue'
 import IntroVideo from './components/IntroVideo.vue'
 import StockComponent from './components/Stock/StockComponent.vue'
-// import ChartComponent from './components/Chart/ChartComponent.vue'
+import ActivitiesComponent from './components/Activities/ActivitiesComponent.vue'
 
 export default {
   components: {
     NavBar,
     IntroVideo,
     StockComponent,
-    // ChartComponent,
+    ActivitiesComponent,
   }
 }
 </script>
+
+<style lang="scss">
+  @import './scss/title.scss'
+</style>

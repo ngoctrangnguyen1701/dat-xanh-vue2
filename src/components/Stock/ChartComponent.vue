@@ -1,5 +1,5 @@
 <template>
-  <b-col md="4">
+  <b-col lg="4">
     <p style="font-size: 18px" class="text-dark">CTCP Tập đoàn Đất Xanh (HSX:DXG)</p>
     <div class="d-flex">
       <div>
@@ -12,7 +12,7 @@
       </div>
     </div>
     <!-- Chart -->
-    <div style="height: 200px">
+    <div>
       <LineChart
         :chart-data="datacollection"
       /> 
