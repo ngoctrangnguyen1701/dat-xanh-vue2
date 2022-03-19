@@ -9,7 +9,14 @@
   font-family: K2D;
   src: url('/public/webfonts/K2D-Regular.ttf');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 body {
   font-family: K2D;
   color: $color-text;
+}
+
+a {
+  text-decoration: none !important;
 }
