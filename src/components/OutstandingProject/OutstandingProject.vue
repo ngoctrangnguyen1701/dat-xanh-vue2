@@ -2,10 +2,11 @@
   <section class="outstanding-project" style="padding-bottom: 80px">
     <div class="d-flex flex-wrap">
       <b-col lg="6" style="padding: 80px 0 80px 100px">
-        <div class="title mb-3">
-          <p class="text-white text-left">DỰ ÁN NỔI BẬT</p>
-          <div class="title-line m-0"></div>
-        </div>
+        <global-title
+          title="DỰ ÁN NỔI BẬT"
+          position="left"
+          colorTitle="white"
+        />
         <b-row>
           <OutstandingProjectItem
             v-for="(item, index) in projectList"

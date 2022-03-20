@@ -2,11 +2,8 @@
   <section class="stock">
     <div class="stock-bg-title">
       <b-container>
-        <div class="title mb-3">
-          <p>CỔ PHIẾU</p>
-          <div class="title-line"></div>
-        </div>
-        <b-col class="mx-auto text-center" style="font-size: 18px">
+        <global-title title="CỔ PHIẾU"/>
+        <b-col class="mx-auto text-center mt-3" style="font-size: 18px">
           Hệ thống quản trị công ty vững mạnh là nền tảng để xây dựng một môi trường làm việc chính trực, minh bạch và công bằng, bảo đảm sự phát triển vững bền trong dài hạn, qua đó kiến tạo giá trị cho cộng đồng và cổ đông của Công ty.
         </b-col>
       </b-container>

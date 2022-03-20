@@ -7,6 +7,7 @@
     <SystemCompany/>
     <OutstandingProject/>
     <NewsComponent/>
+    <InvestAndCooperate/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import ActivitiesComponent from './components/Activities/ActivitiesComponent.vue
 import SystemCompany from './components/SystemCompany/SystemCompany.vue'
 import OutstandingProject from './components/OutstandingProject/OutstandingProject.vue'
 import NewsComponent from './components/News/NewsComponent.vue'
+import InvestAndCooperate from './components/InvestAndCooperate/InvestAndCooperate.vue'
 
 export default {
   components: {
@@ -28,10 +30,11 @@ export default {
     SystemCompany,
     OutstandingProject,
     NewsComponent,
+    InvestAndCooperate,
   }
 }
 </script>
 
 <style lang="scss">
-  @import './scss/title.scss'
+  // @import './scss/title.scss'
 </style>

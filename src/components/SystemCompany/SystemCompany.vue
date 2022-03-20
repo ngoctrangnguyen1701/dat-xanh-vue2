@@ -1,12 +1,11 @@
 <template>
   <section class="system-company">
-    <div class="title">
-      <p>HỆ THỐNG CÔNG TY</p>
-      <div class="title-line"></div>
+    <div style="margin-left: 100px">
+      <global-title title="HỆ THỐNG CÔNG TY"/>
     </div>
     <div class="mt-4 d-flex">
       <b-col lg="6">
-        <b-row style="margin-left: 100px">
+        <b-row style="margin-left: 70px">
           <StatisticItem
             v-for="(item, index) in statisticList"
             :key="index"
@@ -58,7 +57,7 @@ export default {
     CompanyNameItem,
   }
 }
-</script>
+</script>,
 
 <style scoped lang="scss">
   .system-company {

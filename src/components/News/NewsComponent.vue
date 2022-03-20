@@ -1,10 +1,10 @@
 <template>
   <section style="padding: 100px">
     <div class="d-flex border-bottom">
-      <div class="title">
-        <p class="text-left">TIN TỨC</p>
-        <div class="title-line m-0"></div>
-      </div>
+      <global-title
+        title="TIN TỨC"
+        position="left"
+      />
       <div class="breadcrumbs">
         <BreadcrumbsItem
           v-for="(item, index) in breadcrumbsList"

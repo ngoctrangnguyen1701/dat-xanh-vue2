@@ -17,6 +17,7 @@ export default {
   .btn-read-more {
     display: block;
     margin-top: 15px;
+    font-weight: bold;
 
     color: $color-blue2;
     i {

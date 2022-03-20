@@ -1,9 +1,9 @@
 <template>
   <section class="activities">
-    <div class="title">
-      <p class="text-white">LĨNH VỰC HOẠT ĐỘNG</p>
-      <div class="title-line"></div>
-    </div>
+    <global-title
+      title="LĨNH VỰC HOẠT ĐỘNG"
+      colorTitle="white"
+    />
     <b-container fluid>
       <b-row>
         <ActivityItem
@@ -37,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
   .title {
-    padding: 60px 0 20px ;
+    padding: 60px 0 30px ;
     background-image: url(https://www.datxanh.vn/template/tint/modules/main/images/bgactivity.jpg);
     background-size: cover;
   }

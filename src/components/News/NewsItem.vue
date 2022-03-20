@@ -22,14 +22,25 @@ export default {
     padding: 15px;
 
     h3 {
+      height: 100px;
+
       font-size: 17px;
       font-weight: bold;
       color: black;
-      margin-bottom: 50px;
+      margin-bottom: 0;
     }
 
     span {
       color: #00aeef
+    }
+
+    p {
+      overflow: hidden;
+      // width:100px;
+      // height: 100px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   }
 </style>
