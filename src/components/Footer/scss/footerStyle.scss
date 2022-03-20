@@ -1,0 +1,49 @@
+footer {
+  background-image: url(https://datxanh.vn/template/tint/images/bgFooter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-footer-opacity {
+  background: #003663;
+  opacity: 0.85;
+  padding: 100px 100px 0 100px;
+}
+
+.footer-info {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 18px;
+
+  i {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 173, 238, 0.5);
+  padding: 20px 0;
+  margin: 0 -100px;
+
+  text-align: center;
+  color: #cccccc;
+  font-size: 18px;
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    a {
+      display: block;
+      color: white;
+      transition: .5s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

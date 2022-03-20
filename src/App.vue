@@ -8,6 +8,7 @@
     <OutstandingProject/>
     <NewsComponent/>
     <InvestAndCooperate/>
+    <FooterComponent/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import SystemCompany from './components/SystemCompany/SystemCompany.vue'
 import OutstandingProject from './components/OutstandingProject/OutstandingProject.vue'
 import NewsComponent from './components/News/NewsComponent.vue'
 import InvestAndCooperate from './components/InvestAndCooperate/InvestAndCooperate.vue'
+import FooterComponent from './components/Footer/FooterComponent.vue'
 
 export default {
   components: {
@@ -31,10 +33,7 @@ export default {
     OutstandingProject,
     NewsComponent,
     InvestAndCooperate,
+    FooterComponent,
   }
 }
 </script>
-
-<style lang="scss">
-  // @import './scss/title.scss'
-</style>

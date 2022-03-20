@@ -1,38 +1,36 @@
 <template>
   <section>
-    <b-container fluid>
-      <b-row>
-        <b-col lg="6" class="bg-column-left"></b-col>
-        <b-col lg="6" class="px-0">
-          <div class="bg-title pl-5 pb-4">
-            <global-title
-              title="ĐẦU TƯ & HỢP TÁC"
-              position="left"
-              colorTitle="white"
-            />
-            <b-row class="mt-5">
-              <b-col md="6" class="statistic">
-                <p class="mb-0">Đã & đang triển khai</p>
-                <h3>16 <span>dự án</span></h3>
-              </b-col>
-              <b-col md="6" class="statistic">
-                <p class="mb-0">Hợp tác phát triển</p>
-                <h3>50 <span>dự án</span></h3>
-              </b-col>
-            </b-row>
+    <div class="d-flex">
+      <b-col lg="6" class="bg-column-left"></b-col>
+      <b-col lg="6" class="px-0 pb-5">
+        <div class="bg-title pl-5 pb-4">
+          <global-title
+            title="ĐẦU TƯ & HỢP TÁC"
+            position="left"
+            colorTitle="white"
+          />
+          <div class="d-flex mt-5">
+            <b-col md="6" class="statistic">
+              <p class="mb-0">Đã & đang triển khai</p>
+              <h3>16 <span>dự án</span></h3>
+            </b-col>
+            <b-col md="6" class="statistic">
+              <p class="mb-0">Hợp tác phát triển</p>
+              <h3>50 <span>dự án</span></h3>
+            </b-col>
           </div>
-          <div class="mt-4 ml-5">
-            <global-title
-              title="ĐỐI TÁC"
-              position="left"
-            />
-            <div class="mt-5">
-              <PartnerSlider/>
-            </div>
+        </div>
+        <div class="mt-4 px-5">
+          <global-title
+            title="ĐỐI TÁC"
+            position="left"
+          />
+          <div>
+            <PartnerSlider/>
           </div>
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </b-col>
+    </div>
   </section>
 </template>
 

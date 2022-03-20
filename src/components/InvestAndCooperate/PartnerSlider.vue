@@ -3,78 +3,93 @@
     <b-carousel
       id="carousel-1"
       v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
+      :interval="3000"
     >
-      <!-- Text slides with image -->
       <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="https://picsum.photos/1024/480/?image=52"
-      ></b-carousel-slide>
-
-      <!-- Slides with custom text -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-        <h1>Hello world!</h1>
-      </b-carousel-slide>
-
-      <!-- Slides with image only -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-      <b-carousel-slide>
-        <template #img>
-          <img
-            class="d-block img-fluid w-100"
-            width="1024"
-            height="480"
-            src="https://picsum.photos/1024/480/?image=55"
-            alt="image slot"
-          >
-        </template>
-      </b-carousel-slide>
-
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
+        v-for="(item, index) in slideList"
+        :key="index"
+      >
+        <b-row>
+          <PartnerItem
+            v-for="(partnerItem, partnerIndex) in item"
+            :key="partnerIndex"
+            :imgUrl="partnerItem"
+          />
+        </b-row>
       </b-carousel-slide>
     </b-carousel>
 
-    <!-- <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
-    </p> -->
+    <!-- CONTROLS -->
+    <div class="d-flex justify-content-center">
+      <div class="mr-3 btn-change-slide" @click="onChangeSlide(slide - 1)">
+        <IconBack/>
+      </div>
+      <div class="btn-change-slide" @click="onChangeSlide(slide + 1)">
+        <IconNext/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  import partnerList from './data/partnerList'
+  import PartnerItem from './PartnerItem.vue'
+  import IconBack from './IconBack.vue'
+  import IconNext from './IconNext.vue'
+
   export default {
     data() {
       return {
         slide: 0,
-        sliding: null
+        sliding: null,
+        slideList: []
+      }
+    },
+    components: {
+      PartnerItem,
+      IconBack,
+      IconNext,
+    },
+    created() {
+      // https://stackoverflow.com/questions/42761068/paginate-javascript-array
+      const page_size = 9 //1 slide sẽ có 9 item
+      const number_of_page = Math.ceil(partnerList.length / page_size)
+      // số slide tổng = Math.ceil(tổng số item / 9)
+      // slide 1: cắt từ 1 - 9
+      // slide 2: cắt từ 10 - 19
+      // slide 3: cắt từ 19 - 28
+      for(let i = 1; i <= number_of_page; i++) {
+        const arr = partnerList.slice((i - 1) * page_size, i * page_size)
+        this.slideList.push(arr)
+      }
+    },
+    mounted() {
+      const carousel = document.getElementById('carousel-1')
+      const caption = carousel.querySelectorAll('.carousel-caption')
+      console.log(caption);
+      for(let i = 0; i < caption.length; i++) {
+        caption[i].style.position = 'static'
       }
     },
     methods: {
-      // onSlideStart(slide) {
-      onSlideStart() {
-        this.sliding = true
-      },
-      // onSlideEnd(slide) {
-      onSlideEnd() {
-        this.sliding = false
+      onChangeSlide(value) {
+        if(value < 0 || value > this.slideList.length - 1){
+          //trường hợp value nhỏ hơn 0 hoặc là lớn hơn tổng số slide thì không set slide
+          return
+        }
+        this.slide = value
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  .btn-change-slide {
+    &:hover {
+      svg {
+        fill: #02437b;
+        cursor: pointer;
+      }
+    }
+  }
+</style>
