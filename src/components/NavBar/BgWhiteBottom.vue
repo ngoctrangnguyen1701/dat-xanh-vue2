@@ -31,10 +31,12 @@ export default {
     left: 0;
     transform: translateY(10px);
     transition: .5s;
+    z-index: -100;
 
     &.show {
       opacity: 1;
       transform: translateY(0);
+      z-index: 100;
     }
   }
 </style>

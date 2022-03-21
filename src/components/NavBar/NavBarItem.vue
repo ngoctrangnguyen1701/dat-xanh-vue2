@@ -11,7 +11,6 @@
     >
       {{ item.labelParent }}
     </router-link>
-    <!-- <a :href="item.linkParent" class="label-parent">{{ item.labelParent }}</a> -->
     <div class="navbar-submenu">
       <router-link 
         v-for="(submenu, index) in item.linkList"
@@ -22,15 +21,6 @@
         <div class="circle"></div> 
         <span>{{submenu.label.toUpperCase()}}</span>
       </router-link>
-      <!-- <a
-        v-for="(submenu, index) in item.linkList"
-        :key="index"
-        :href="submenu.link"
-        :class="index === item.linkList.length - 1 ? 'submenu-item pb-3' : 'submenu-item'"
-      >
-        <div class="circle"></div> 
-        <span>{{submenu.label.toUpperCase()}}</span>
-      </a> -->
     </div>
     <BgWhiteBottom
       :isHovering="isHovering"
@@ -78,6 +68,7 @@ export default {
       .navbar-submenu {
         opacity: 1;
         transform: translateY(0);
+        // z-index: 101;
       }
       a {
         color: $color-text;
@@ -93,8 +84,10 @@ export default {
   .navbar-submenu {
     position: absolute;
     top: 100%;
-    z-index: 100;
+    z-index: 101;
+    // z-index: -101;
 
+    // transition: opacity transform .5s;
     transition: .5s;
     opacity: 0;
     transform: translateY(10px);

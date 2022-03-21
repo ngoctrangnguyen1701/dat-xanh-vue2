@@ -46,7 +46,10 @@
       </div>
     </div>
     
-    <div class="bg-black-opacity" :style="showNavBarMobile && 'opacity: 1'"></div>
+    <div 
+      class="bg-black-opacity"
+      :style="showNavBarMobile && 'opacity: 1; z-index: 1000'"
+    ></div>
     <NavBarMobile :show="showNavBarMobile"/>
   </section>
 </template>
@@ -114,8 +117,8 @@ export default {
 
     position: fixed;
     left: 0;
-    z-index: 1000;
-    transition: .3s;
+    z-index: -1000;
+    transition: opacity .3s;
     opacity: 0;
   }
 </style>
