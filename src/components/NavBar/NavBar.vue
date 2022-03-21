@@ -1,9 +1,9 @@
 <template>
   <section id="header-navbar" class="position-relative">
     <div class="wrapper">
-      <b-row class="align-items-center">
-        <b-col xs="3">LOGO</b-col>
-        <b-col xs="9">
+      <div class="d-flex flex-wrap align-items-center">
+        <b-col cols="2" class="pl-0">LOGO</b-col>
+        <b-col cols="10" class="px-0">
           <b-row class="py-3 align-items-center justify-content-end justify-content-lg-between">
             <div class="navbar-item icon-home d-none d-lg-block">
               <i class="fa-solid fa-house"></i>
@@ -33,7 +33,7 @@
               <FrameFlag :show="showFrameFlag" v-model="chooseFlag" />
             </div>
             <div
-              class="navbar-item icon-menu"
+              class="navbar-item icon-menu d-block d-lg-none"
               @click.stop="showNavBarMobile = !showNavBarMobile"
             >
               <i class="fa-solid fa-xmark" v-if="showNavBarMobile"></i>
@@ -41,11 +41,11 @@
             </div>
           </b-row>
         </b-col>
-      </b-row>
+      </div>
     </div>
     
-    <div class="bg-black-opacity" :style="showNavBarMobile && 'opacity: 1'"></div>
-    <NavBarMobile :show="showNavBarMobile"/>
+    <!-- <div class="bg-black-opacity" :style="showNavBarMobile && 'opacity: 1'"></div>
+    <NavBarMobile :show="showNavBarMobile"/> -->
   </section>
 </template>
 
@@ -62,7 +62,7 @@ import navbarList from '@/global/data/navbarList'
 import FrameSearch from "./FrameSearch.vue";
 import FrameFlag from "./FrameFlag.vue";
 import NavBarItem from './NavBarItem.vue'
-import NavBarMobile from './NavBarMobile.vue'
+// import NavBarMobile from './NavBarMobile.vue'
 
 export default {
   data() {
@@ -79,7 +79,7 @@ export default {
     FrameSearch,
     FrameFlag,
     NavBarItem,
-    NavBarMobile,
+    // NavBarMobile,
   },
   mounted() {
     //XỬ LÍ CLICK OUTSIDE TẮT CÁI KHUNG SEARCH ĐI

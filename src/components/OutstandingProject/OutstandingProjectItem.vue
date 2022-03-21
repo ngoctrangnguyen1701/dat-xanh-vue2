@@ -1,5 +1,5 @@
 <template>
-  <b-col md="6" class="outstanding-project-item pl-0">
+  <b-col sm="6" class="outstanding-project-item pl-0">
     <a href="" class="d-flex align-items-center mt-3 text-decoration-none">
       <div class="line"></div>
       <p class="mb-0">{{item}}</p>
@@ -19,13 +19,10 @@ export default {
     .line {
       position: relative;
       height: 1px;
-      // width: 60px;
       width: 0;
       background: #f5821f;
       transition: .3s;
       
-      // transform: scale(0);
-
       &:after {
         content: "";
         background: #f5821f;

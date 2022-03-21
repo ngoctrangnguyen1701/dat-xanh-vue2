@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="d-flex">
-      <b-col lg="6" class="bg-column-left"></b-col>
+      <b-col lg="6" class="bg-column-left d-none d-lg-block"></b-col>
       <b-col lg="6" class="px-0 pb-5">
-        <div class="bg-title pl-5 pb-4">
+        <div class="bg-title pl-3 pl-md-5 pb-4">
           <global-title
             title="ĐẦU TƯ & HỢP TÁC"
             position="left"
@@ -25,9 +25,9 @@
             title="ĐỐI TÁC"
             position="left"
           />
-          <div>
+          <!-- <div> -->
             <PartnerSlider/>
-          </div>
+          <!-- </div> -->
         </div>
       </b-col>
     </div>

@@ -6,8 +6,7 @@
     <div class="mt-4 d-flex">
       <b-col lg="6" class="px-0">
         <div class="wrapper">
-          <!-- <div class="d-flex flex-wrap"> -->
-          <b-row>
+          <b-row class="justify-content-center">
             <StatisticItem
               v-for="(item, index) in statisticList"
               :key="index"
@@ -16,17 +15,7 @@
               v-model="indexActive"
             />  
           </b-row>
-          <!-- </div> -->
         </div>
-        <!-- <b-row style="margin-left: 70px">
-          <StatisticItem
-            v-for="(item, index) in statisticList"
-            :key="index"
-            :item="item"
-            :index="index"
-            v-model="indexActive"
-          />
-        </b-row> -->
         <div class="company-name mt-4">
           <div class="wrapper">
             <div class="border-white border-bottom d-flex align-items-end">

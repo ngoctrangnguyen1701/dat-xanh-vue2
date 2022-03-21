@@ -1,40 +1,42 @@
 <template>
   <footer>
-    <div class="bg-footer-opacity wrapper">
-      <b-row>
-        <b-col lg="5">
-          <div class="mb-5">LOGO</div>
-          <div class="footer-info mr-3">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Trụ sở chính: 2W Ung Văn Khiêm, P.25, Quận Bình Thạnh, TP.HCM</span>
-          </div>
-          <div class="footer-info mr-3">
-            <i class="fa-solid fa-phone"></i>
-            <span>Điện thoại: 028 6252 5252</span>
-          </div>
-          <div class="footer-info mr-3">
-            <i class="fa-solid fa-fax"></i>
-            <span>Fax: 028 6252 5252</span>
-          </div>
-          <div class="footer-info mr-3">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Email: info@datxanh.com.vn</span>
-          </div>
-          <div class="footer-info mr-3">
-            <i class="fa-solid fa-globe"></i>
-            <span>Website: www.datxanh.vn</span>
-          </div>
-        </b-col>
-        <b-col lg="7">
-          <b-row>
-            <FooterItem
-              v-for="(item, index) in navbarList"
-              :key="index"
-              :item="item"
-            />
-          </b-row>
-        </b-col>
-      </b-row>    
+    <div class="bg-footer-opacity">
+      <div class="wrapper">
+        <b-row>
+          <b-col lg="5">
+            <div class="mb-5">LOGO</div>
+            <div class="footer-info mr-3">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Trụ sở chính: 2W Ung Văn Khiêm, P.25, Quận Bình Thạnh, TP.HCM</span>
+            </div>
+            <div class="footer-info mr-3">
+              <i class="fa-solid fa-phone"></i>
+              <span>Điện thoại: 028 6252 5252</span>
+            </div>
+            <div class="footer-info mr-3">
+              <i class="fa-solid fa-fax"></i>
+              <span>Fax: 028 6252 5252</span>
+            </div>
+            <div class="footer-info mr-3">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email: info@datxanh.com.vn</span>
+            </div>
+            <div class="footer-info mr-3">
+              <i class="fa-solid fa-globe"></i>
+              <span>Website: www.datxanh.vn</span>
+            </div>
+          </b-col>
+          <b-col lg="7">
+            <b-row>
+              <FooterItem
+                v-for="(item, index) in navbarList"
+                :key="index"
+                :item="item"
+              />
+            </b-row>
+          </b-col>
+        </b-row>    
+      </div>
 
       <div class="footer-bottom mt-4">
         <div class="social">

@@ -1,6 +1,7 @@
 <template>
   <div
     class="navbar-item postion-relative d-none d-lg-flex"
+    style="width: 10%; min-width: 75px"
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
@@ -40,7 +41,6 @@ export default {
       const height = target.querySelector('.navbar-submenu').offsetHeight
       //lấy cái height của cái thằng menu con
       // console.log(this.item.labelParent, height);
-      // this.$emit('isHovering', height)
       this.isHovering = true
       this.bgHoverHeight = height
     }
@@ -57,6 +57,8 @@ export default {
 
   .navbar-item {
     display: none;
+    text-align: center;
+
     &:hover {
       .navbar-submenu {
         opacity: 1;
@@ -72,29 +74,22 @@ export default {
     }
   }
 
-//   @media (min-width: 992px) {
-//   .navbar-item  {
-//     display: flex;
-//   }
-// }
 
   .navbar-submenu {
     position: absolute;
     top: 100%;
-    // left: 0;
     z-index: 100;
 
     transition: .5s;
     opacity: 0;
-    // opacity: 1;
     transform: translateY(10px);
-    // display: none;
 
     .submenu-item {
       padding-top: 15px;
       display: block;
       color: $color-text;
       font-size: 18px;
+      text-align: left;
 
       .circle {
         width: 10px;

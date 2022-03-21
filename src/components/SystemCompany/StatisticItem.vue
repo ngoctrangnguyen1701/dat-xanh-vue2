@@ -1,6 +1,6 @@
 <template>
-  <b-col
-    cols="2" class="statistic-item mt-3"
+  <div
+    class="statistic-item mt-3 px-3" style="width: 110px"
     @click="$emit('input', index)"
     :class="value === index && 'active'"
   >
@@ -8,7 +8,7 @@
       <span>{{item.quantity}}</span>
     </div>
     <p class="mb-0">{{item.location}}</p>
-  </b-col>
+  </div>
 </template>
 
 <script>
