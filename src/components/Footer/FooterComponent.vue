@@ -28,7 +28,7 @@
         <b-col lg="7">
           <b-row>
             <FooterItem
-              v-for="(item, index) in footerList"
+              v-for="(item, index) in navbarList"
               :key="index"
               :item="item"
             />
@@ -55,13 +55,13 @@
 </template>
 
 <script>
-import footerList from './data/footerList'
+import navbarList from '@/global/data/navbarList'
 import FooterItem from './FooterItem.vue'
 
 export default {
   data() {
     return {
-      footerList
+      navbarList,
     }
   },
   components: {

@@ -11,7 +11,7 @@
       <p class="footer-sub-menu">{{itemChild.label}}</p>
     </a>
     <btn-read-more 
-      v-if="labelParent === 'DỰ ÁN'"
+      v-if="item.labelParent === 'DỰ ÁN'"
       text="XEM TẤT CẢ"
     />
   </b-col>

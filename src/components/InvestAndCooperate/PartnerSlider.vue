@@ -66,7 +66,7 @@
     mounted() {
       const carousel = document.getElementById('carousel-1')
       const caption = carousel.querySelectorAll('.carousel-caption')
-      console.log(caption);
+      // console.log(caption);
       for(let i = 0; i < caption.length; i++) {
         caption[i].style.position = 'static'
       }

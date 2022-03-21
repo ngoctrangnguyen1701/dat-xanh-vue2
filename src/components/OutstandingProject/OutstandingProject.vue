@@ -14,10 +14,6 @@
             :item="item"
           />
         </b-row>
-        <!-- <a href="" class="btn-read-more">
-          XEM THÊM
-          <i class="fa-solid fa-sort-up d-inline-block ml-2"></i>
-        </a> -->
         <btn-read-more/>
       </b-col>
       <b-col lg="6" class="pr-0">
@@ -37,7 +33,6 @@
 <script>
 import OutstandingProjectItem from './OutstandingProjectItem.vue'
 import projectList from './data/projectList'
-import BtnReadMore from '@/globalComponent/BtnReadMore.vue'
 
 export default {
   data() {
@@ -47,7 +42,6 @@ export default {
   },
   components: {
     OutstandingProjectItem,
-    BtnReadMore
   }
 }
 </script>
@@ -58,23 +52,6 @@ export default {
   .outstanding-project {
     background: #02213a
   }
-
-  // .btn-read-more {
-  //   display: block;
-  //   margin-top: 15px;
-
-  //   color: $color-blue2;
-  //   i {
-  //     transform: rotate(90deg) translate(0);
-  //     transition: .3s;
-  //   }
-
-  //   &:hover {
-  //     i {
-  //       transform: rotate(90deg) translateY(-5px);
-  //     }
-  //   }
-  // }
 
   .outstanding-project-img {
     position: relative;

@@ -1,4 +1,4 @@
-const footerList = [
+const navbarList = [
   {
     labelParent: 'GIỚI THIỆU',
     linkParent: '/',
@@ -143,4 +143,4 @@ const footerList = [
   },
 ]
 
-export default footerList
+export default navbarList

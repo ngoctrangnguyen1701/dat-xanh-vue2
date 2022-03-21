@@ -2,8 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import {BootstrapVue} from 'bootstrap-vue'
 import './scss/global.scss'
-import BtnReadMore from './globalComponent/BtnReadMore.vue'
-import GlobalTitle from './globalComponent/GlobalTitle.vue'
+
+import BtnReadMore from './global/components/BtnReadMore.vue'
+import GlobalTitle from './global/components/GlobalTitle.vue'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)

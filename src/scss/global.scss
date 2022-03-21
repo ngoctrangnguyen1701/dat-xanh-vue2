@@ -20,3 +20,15 @@ body {
 a {
   text-decoration: none !important;
 }
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 0 100px;
+  }
+}
