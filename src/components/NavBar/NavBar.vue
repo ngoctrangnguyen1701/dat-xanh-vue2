@@ -6,7 +6,9 @@
         <b-col cols="10" class="px-0">
           <b-row class="py-3 align-items-center justify-content-end justify-content-lg-between">
             <div class="navbar-item icon-home d-none d-lg-block">
-              <i class="fa-solid fa-house"></i>
+              <router-link to="/" class="text-white">
+                <i class="fa-solid fa-house"></i>
+              </router-link>
             </div>
             <NavBarItem
               v-for="(item, index) in navbarList"
