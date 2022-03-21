@@ -1,13 +1,28 @@
 <template>
   <div
     class="navbar-item postion-relative d-none d-lg-flex"
-    style="width: 10%; min-width: 75px"
+    style="width: 12%; min-width: 75px; max-width: 150px"
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
-    <a :href="item.linkParent" class="label-parent">{{ item.labelParent }}</a>
+    <router-link
+      :to="item.linkParent"
+      class="label-parent"
+    >
+      {{ item.labelParent }}
+    </router-link>
+    <!-- <a :href="item.linkParent" class="label-parent">{{ item.labelParent }}</a> -->
     <div class="navbar-submenu">
-      <a
+      <router-link 
+        v-for="(submenu, index) in item.linkList"
+        :key="index"
+        :to="submenu.link"
+        :class="index === item.linkList.length - 1 ? 'submenu-item pb-3' : 'submenu-item'"
+      >
+        <div class="circle"></div> 
+        <span>{{submenu.label.toUpperCase()}}</span>
+      </router-link>
+      <!-- <a
         v-for="(submenu, index) in item.linkList"
         :key="index"
         :href="submenu.link"
@@ -15,7 +30,7 @@
       >
         <div class="circle"></div> 
         <span>{{submenu.label.toUpperCase()}}</span>
-      </a>
+      </a> -->
     </div>
     <BgWhiteBottom
       :isHovering="isHovering"

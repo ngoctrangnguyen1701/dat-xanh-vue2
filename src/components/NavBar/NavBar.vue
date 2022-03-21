@@ -44,8 +44,8 @@
       </div>
     </div>
     
-    <!-- <div class="bg-black-opacity" :style="showNavBarMobile && 'opacity: 1'"></div>
-    <NavBarMobile :show="showNavBarMobile"/> -->
+    <div class="bg-black-opacity" :style="showNavBarMobile && 'opacity: 1'"></div>
+    <NavBarMobile :show="showNavBarMobile"/>
   </section>
 </template>
 
@@ -62,7 +62,7 @@ import navbarList from '@/global/data/navbarList'
 import FrameSearch from "./FrameSearch.vue";
 import FrameFlag from "./FrameFlag.vue";
 import NavBarItem from './NavBarItem.vue'
-// import NavBarMobile from './NavBarMobile.vue'
+import NavBarMobile from './NavBarMobile.vue'
 
 export default {
   data() {
@@ -79,7 +79,7 @@ export default {
     FrameSearch,
     FrameFlag,
     NavBarItem,
-    // NavBarMobile,
+    NavBarMobile,
   },
   mounted() {
     //XỬ LÍ CLICK OUTSIDE TẮT CÁI KHUNG SEARCH ĐI

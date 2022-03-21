@@ -1,7 +1,7 @@
 const navbarList = [
   {
     labelParent: 'GIỚI THIỆU',
-    linkParent: '/',
+    linkParent: '/introduction',
     linkList: [
       {
         label: 'Giới thiệu',
