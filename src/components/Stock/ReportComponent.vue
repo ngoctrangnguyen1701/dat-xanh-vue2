@@ -1,5 +1,5 @@
 <template>
-  <b-col md="6" lg="4" class="report position-relative">
+  <b-col md="6" lg="4" class="report position-relative pt-3 pt-lg-0">
     <div class="bg-report" :style="{backgroundImage: `url(${imgUrl})`}"></div>
     <a href="" class="text-white d-block text-center text-decoration-none">
       <div>

@@ -1,11 +1,24 @@
 <template>
   <section class="system-company">
-    <div style="margin-left: 100px">
+    <div class="wrapper">
       <global-title title="HỆ THỐNG CÔNG TY"/>
     </div>
     <div class="mt-4 d-flex">
-      <b-col lg="6">
-        <b-row style="margin-left: 70px">
+      <b-col lg="6" class="px-0">
+        <div class="wrapper">
+          <!-- <div class="d-flex flex-wrap"> -->
+          <b-row>
+            <StatisticItem
+              v-for="(item, index) in statisticList"
+              :key="index"
+              :item="item"
+              :index="index"
+              v-model="indexActive"
+            />  
+          </b-row>
+          <!-- </div> -->
+        </div>
+        <!-- <b-row style="margin-left: 70px">
           <StatisticItem
             v-for="(item, index) in statisticList"
             :key="index"
@@ -13,22 +26,24 @@
             :index="index"
             v-model="indexActive"
           />
-        </b-row>
+        </b-row> -->
         <div class="company-name mt-4">
-          <div class="border-white border-bottom d-flex align-items-end">
-            <i class="fa-solid fa-search d-block mr-3 mb-2"></i>
-            <input placeholder="Tìm kiếm" class="form-control">
-          </div>
-          <div class="frame-company-name-item">
-            <CompanyNameItem
-              v-for="(item, index) in companyNameList"
-              :key="index"
-              :item="item"
-            />
+          <div class="wrapper">
+            <div class="border-white border-bottom d-flex align-items-end">
+              <i class="fa-solid fa-search d-block mr-3 mb-2"></i>
+              <input placeholder="Tìm kiếm" class="form-control">
+            </div>
+            <div class="frame-company-name-item">
+              <CompanyNameItem
+                v-for="(item, index) in companyNameList"
+                :key="index"
+                :item="item"
+              />
+            </div>
           </div>
         </div>
       </b-col>
-      <b-col lg="6">
+      <b-col lg="6" class="d-none d-lg-block">
         <div style="padding: 50px 100px 50px 50px">
           <img src="https://datxanh.vn/template/tint/modules/system/images/vn-map.png" class="img-fluid">
         </div>
@@ -68,8 +83,9 @@ export default {
   
   .company-name {
     background: #02437b;
-    padding: 25px 50px 25px 100px;
-    margin-left: -15px;
+    // padding: 25px 50px 25px 100px;
+    padding: 25px 15px;
+    // margin-left: -15px;
     color: white;
 
     input {

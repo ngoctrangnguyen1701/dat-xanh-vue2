@@ -2,10 +2,10 @@
   <section id="header-navbar" class="position-relative">
     <div class="wrapper">
       <b-row class="align-items-center">
-        <b-col lg="3">LOGO</b-col>
-        <b-col lg="9">
-          <b-row class="py-3 align-items-center justify-content-between">
-            <div class="navbar-item icon-home">
+        <b-col xs="3">LOGO</b-col>
+        <b-col xs="9">
+          <b-row class="py-3 align-items-center justify-content-end justify-content-lg-between">
+            <div class="navbar-item icon-home d-none d-lg-block">
               <i class="fa-solid fa-house"></i>
             </div>
             <NavBarItem
@@ -32,10 +32,20 @@
               <i class="fa-solid fa-caret-down"></i>
               <FrameFlag :show="showFrameFlag" v-model="chooseFlag" />
             </div>
+            <div
+              class="navbar-item icon-menu"
+              @click.stop="showNavBarMobile = !showNavBarMobile"
+            >
+              <i class="fa-solid fa-xmark" v-if="showNavBarMobile"></i>
+              <i class="fa-solid fa-bars" v-else></i>
+            </div>
           </b-row>
         </b-col>
       </b-row>
     </div>
+    
+    <div class="bg-black-opacity" :style="showNavBarMobile && 'opacity: 1'"></div>
+    <NavBarMobile :show="showNavBarMobile"/>
   </section>
 </template>
 
@@ -52,6 +62,7 @@ import navbarList from '@/global/data/navbarList'
 import FrameSearch from "./FrameSearch.vue";
 import FrameFlag from "./FrameFlag.vue";
 import NavBarItem from './NavBarItem.vue'
+import NavBarMobile from './NavBarMobile.vue'
 
 export default {
   data() {
@@ -61,12 +72,14 @@ export default {
       showFrameFlag: false,
       chooseFlag: "https://datxanh.vn/template/tint/images/flag-vi.svg",
       navbarList,
+      showNavBarMobile: false,
     };
   },
   components: {
     FrameSearch,
     FrameFlag,
     NavBarItem,
+    NavBarMobile,
   },
   mounted() {
     //XỬ LÍ CLICK OUTSIDE TẮT CÁI KHUNG SEARCH ĐI
@@ -81,10 +94,26 @@ export default {
     searchText(newValue) {
       console.log("searchText: ", newValue);
     },
+    showNavBarMobile(newValue) {
+      const body = document.getElementsByTagName('body')[0]
+      body.style.overflow = newValue ? 'hidden' : 'auto'
+    }
   },
 };
 </script>
 
 <style scoped lang="scss">
 @import "./scss/navbarStyle.scss";
+
+  .bg-black-opacity {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    transition: .3s;
+    opacity: 0;
+  }
 </style>

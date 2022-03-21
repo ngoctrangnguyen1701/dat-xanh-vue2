@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="bg-footer-opacity">
+    <div class="bg-footer-opacity wrapper">
       <b-row>
         <b-col lg="5">
           <div class="mb-5">LOGO</div>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="navbar-item postion-relative"
+    class="navbar-item postion-relative d-none d-lg-flex"
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
@@ -56,6 +56,7 @@ export default {
   @import "./scss/navbarStyle.scss";
 
   .navbar-item {
+    display: none;
     &:hover {
       .navbar-submenu {
         opacity: 1;
@@ -70,6 +71,12 @@ export default {
       }
     }
   }
+
+//   @media (min-width: 992px) {
+//   .navbar-item  {
+//     display: flex;
+//   }
+// }
 
   .navbar-submenu {
     position: absolute;

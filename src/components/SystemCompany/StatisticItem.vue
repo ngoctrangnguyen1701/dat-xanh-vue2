@@ -1,6 +1,6 @@
 <template>
   <b-col
-    md="4" lg="2" class="statistic-item mt-3"
+    cols="2" class="statistic-item mt-3"
     @click="$emit('input', index)"
     :class="value === index && 'active'"
   >

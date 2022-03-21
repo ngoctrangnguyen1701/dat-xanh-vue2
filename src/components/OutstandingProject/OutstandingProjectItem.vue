@@ -1,5 +1,5 @@
 <template>
-  <b-col md="6" class="outstanding-project-item">
+  <b-col md="6" class="outstanding-project-item pl-0">
     <a href="" class="d-flex align-items-center mt-3 text-decoration-none">
       <div class="line"></div>
       <p class="mb-0">{{item}}</p>

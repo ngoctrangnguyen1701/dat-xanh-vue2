@@ -1,31 +1,35 @@
 <template>
   <section class="outstanding-project" style="padding-bottom: 80px">
-    <div class="d-flex flex-wrap">
-      <b-col lg="6" style="padding: 80px 0 80px 100px">
-        <global-title
-          title="DỰ ÁN NỔI BẬT"
-          position="left"
-          colorTitle="white"
-        />
-        <b-row>
-          <OutstandingProjectItem
-            v-for="(item, index) in projectList"
-            :key="index"
-            :item="item"
+    <div class="wrapper">
+      <div class="d-flex flex-wrap">
+        <!-- <b-col lg="6" style="padding: 80px 0 80px 100px"> -->
+        <b-col lg="6" style="padding: 80px 0">
+          <global-title
+            title="DỰ ÁN NỔI BẬT"
+            position="left"
+            colorTitle="white"
           />
-        </b-row>
-        <btn-read-more/>
-      </b-col>
-      <b-col lg="6" class="pr-0">
-        <div class="outstanding-project-img">
-          <div style="overflow: hidden">
-            <img class="w-100" src="https://www.datxanh.vn/assets/uploads/myfiles/files/duan-dxg_2.jpg">
+          <div class="d-flex flex-wrap">
+            <OutstandingProjectItem
+              v-for="(item, index) in projectList"
+              :key="index"
+              :item="item"
+            />
           </div>
-          <div class="bg-orange">
-            <p>Tạo lập cuộc sống ưu việt</p>
+          <btn-read-more/>
+        </b-col>
+        <b-col lg="6" class="pr-lg-0">
+          <div class="outstanding-project-img">
+            <div style="overflow: hidden">
+              <img class="w-100" src="https://www.datxanh.vn/assets/uploads/myfiles/files/duan-dxg_2.jpg">
+            </div>
+            <div class="bg-orange d-none d-lg-block">
+              <p>Tạo lập cuộc sống ưu việt</p>
+            </div>
           </div>
-        </div>
-      </b-col>
+        </b-col>
+      </div>
+      
     </div>
   </section>
 </template>

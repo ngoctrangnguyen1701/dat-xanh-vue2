@@ -1,5 +1,5 @@
 <template>
-  <b-col lg="3">
+  <b-col md="6" lg="3">
     <a :href="item.linkParent">
       <h3 class="footer-title">{{item.labelParent}}</h3>
     </a>
