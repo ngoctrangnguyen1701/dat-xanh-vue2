@@ -35,11 +35,14 @@ export default {
     &:after {
       content: '';
       display: block;
-      width: 50%;
-      height: 100%;
+      // width: 50%;
+      // height: 100%;
+      width: 500px;
+      height: 400px;
       background-image: url(https://www.datxanh.vn/template/tint/images/setting.gif);
       background-position: right;
       background-repeat: no-repeat;
+      background-size: 80%;
 
       position: absolute;
       right: 0;

@@ -9,7 +9,7 @@ const navbarList = [
       },
       {
         label: 'Văn hóa doanh nghiệp',
-        link: '/',
+        link: '/culture',
       },
       {
         label: 'Hệ thống',

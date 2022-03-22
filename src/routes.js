@@ -1,5 +1,7 @@
 import HomePage from '@/pages/HomePage.vue'
 import IntroductionPage from '@/pages/IntroductionPage.vue'
+import IntroductionChildrenPage from '@/components/IntroductionPage/IntroductionPage/IntroductionChildrenPage.vue'
+
 
 const routes = [
   {
@@ -8,7 +10,13 @@ const routes = [
   },
   {
     path: '/introduction',
-    component: IntroductionPage
+    component: IntroductionPage,
+    children: [
+      {
+        path:'',
+        component: IntroductionChildrenPage
+      }
+    ]
   },
 ]
 
