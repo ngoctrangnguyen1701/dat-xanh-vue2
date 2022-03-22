@@ -3,12 +3,12 @@
     <global-title title="CÂU CHUYỆN ĐẤT XANH"/>
     <div class="wrapper">
       <b-row class="align-items-center">
-        <b-col lg="6" class="d-flex mt-4">
-          <i class="fa-solid fa-quote-left d-block"></i>
-          <h1>
-            Trở thành 1 trong 10 công ty phát triển Bất động sản
-            tốt nhất Đông Nam Á.
-          </h1>
+        <b-col lg="6" class="d-flex mt-4 column-left">
+          <i class="fa-solid fa-quote-left d-block" style="font-size: 60px"></i>
+          <p>
+            Trở thành <strong>1 trong 10</strong> công ty phát triển Bất động sản
+            <strong>tốt nhất Đông Nam Á.</strong>
+          </p>
         </b-col>
         <b-col lg="6" class="mt-4">
           <p class="text-justify">
@@ -24,6 +24,8 @@
         </b-col>
       </b-row>
     </div>
+
+    <div class="bg-story mt-5"></div>
   </section>
 </template>
 
@@ -39,5 +41,19 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-  
+  .column-left {
+    font-size: 60px;
+    color: #064d92;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .bg-story {
+    background-image: url(https://www.datxanh.vn/assets/uploads/images/post/bg-history-1_2122020195734_15320211093.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+  }
 </style>

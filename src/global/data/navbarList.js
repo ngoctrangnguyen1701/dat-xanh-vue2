@@ -5,7 +5,7 @@ const navbarList = [
     linkList: [
       {
         label: 'Giới thiệu',
-        link: '/',
+        link: '/introduction',
       },
       {
         label: 'Văn hóa doanh nghiệp',

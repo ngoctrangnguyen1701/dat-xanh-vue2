@@ -1,4 +1,5 @@
-import Vue from 'vue'
+// import Vue from 'vue'
+import Vue from 'vue/dist/vue.js'
 import App from './App.vue'
 import {BootstrapVue} from 'bootstrap-vue'
 import './scss/global.scss'
@@ -7,7 +8,6 @@ import BtnReadMore from './global/components/BtnReadMore.vue'
 import GlobalTitle from './global/components/GlobalTitle.vue'
 import NavBarMenu2 from './global/components/NavBarMenu2.vue'
 import BgHeader from './global/components/BgHeader'
-
 import routes from './routes'
 import VueRouter from 'vue-router'
 

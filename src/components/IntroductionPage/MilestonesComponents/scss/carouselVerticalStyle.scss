@@ -1,0 +1,67 @@
+.display-period {
+  // background-color: lightblue;
+  height: 400px;
+  overflow: hidden;
+
+  .frame-period {
+    // background-color: orange;
+    // opacity: .5;
+    transition: .5s;
+
+    .period-item {
+      // max-width: 200px;
+      // min-width: 100px;
+
+      h3 {
+        font-size: 40px;
+        color: black;
+
+        width: 80%;
+        max-width: 200px;
+        min-width: 100px;
+        cursor: pointer;
+      }
+    
+      .dot {
+        // width: 2;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        cursor: pointer;
+
+        // width: 7.2px;
+        // height: 7.2px;
+        // border-radius: 50%;
+        // background: black;
+
+        // top: calc(50% - 7.5px);
+        // right: 0;
+        // right: -3.6px;
+
+        &:after {
+          content: "";
+          display: block;
+          margin: auto;
+          width: 7.2px;
+          height: 7.2px;
+          border-radius: 50%;
+          background: black;
+        } 
+      }
+
+      &.active {
+        h3 {
+          color: #064d92;
+          font-weight: bold;
+        }
+        .dot {
+          &:after {
+            width: 15px;
+            height: 15px;
+            background: #064d92;
+          }
+        }
+      }
+    }
+  }
+}

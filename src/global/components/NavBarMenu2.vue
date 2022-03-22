@@ -6,6 +6,7 @@
         :key="index"
         :to="item.link"
         class="menu-item pt-5 pb-3 position-relative"
+        :class="item.link.includes($route.path) && 'active'"
       >{{item.label.toUpperCase()}}</router-link>
     </div>
   </div>
@@ -18,7 +19,7 @@ export default {
   props: ['menu'],
   data() {
     return {
-      list: navbarList.find(item => item.labelParent === this.menu).linkList
+      list: navbarList.find(item => item.labelParent === this.menu).linkList,
     }
   },
 }
@@ -32,6 +33,7 @@ export default {
   .menu-item {
     display: block;
     border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
 
     font-size: 18px;
     color: #666666;
@@ -44,10 +46,19 @@ export default {
 
       position: absolute;
       left: calc(50% - 8px);
-      bottom: 0;
+      bottom: -1px;
     }
 
     &:hover {
+      color: #0066b3;
+      border-color: #27b3ee;
+
+      &:after {
+        border-bottom: 10px solid #27b3ee;;
+      }
+    }
+
+    &.active {
       color: #0066b3;
       border-color: #27b3ee;
 
