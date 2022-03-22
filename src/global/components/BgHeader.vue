@@ -21,7 +21,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 10% 0;
+    padding: 12% 0;
 
     h1 {
       margin: 0;

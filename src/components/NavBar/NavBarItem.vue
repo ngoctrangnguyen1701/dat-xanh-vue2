@@ -1,7 +1,13 @@
 <template>
+  <!-- <div
+    class="navbar-item postion-relative d-none d-lg-flex"
+    style="min-width: 70px; max-width: 150px"
+    @mouseenter="onHover($event.target)"
+    @mouseleave="isHovering = false"
+  > -->
   <div
     class="navbar-item postion-relative d-none d-lg-flex"
-    style="width: 12%; min-width: 75px; max-width: 150px"
+    style="width: 11.5%; max-width: 140px"
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
@@ -68,7 +74,6 @@ export default {
       .navbar-submenu {
         opacity: 1;
         transform: translateY(0);
-        // z-index: 101;
       }
       a {
         color: $color-text;
@@ -85,9 +90,7 @@ export default {
     position: absolute;
     top: 100%;
     z-index: 101;
-    // z-index: -101;
-
-    // transition: opacity transform .5s;
+    
     transition: .5s;
     opacity: 0;
     transform: translateY(10px);

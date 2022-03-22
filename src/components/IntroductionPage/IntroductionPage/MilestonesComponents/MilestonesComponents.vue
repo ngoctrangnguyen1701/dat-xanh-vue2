@@ -43,6 +43,7 @@ export default {
       background-position: right;
       background-repeat: no-repeat;
       background-size: 80%;
+      mix-blend-mode: darken;
 
       position: absolute;
       right: 0;

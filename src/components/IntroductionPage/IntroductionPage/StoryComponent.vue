@@ -54,6 +54,6 @@ export default {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10% 0;
+    padding: 15% 0;
   }
 </style>

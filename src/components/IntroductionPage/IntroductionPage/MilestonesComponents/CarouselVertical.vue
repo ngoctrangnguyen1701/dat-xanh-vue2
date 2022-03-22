@@ -26,11 +26,16 @@ export default {
       scroll: 0,
       periodElementList: [],
       indexActive: 0,
-      // indexActive: value,
       runPeriod: null,
     }
   },
   mounted() {
+    //khi component được gắn thì sẽ cho chạy carousel, bằng cách thay cứ 4s thay đổi giá trị indexActive
+    //khi giá trị indexActive có sự thay đổi, cập nhật giá trị của biến 'scroll' chính là offsetTop của cái phần tử index được active
+    //và cũng là giá trị dùng để translate cho cái thằng frame-period
+    //khi giá trị 'scroll' thay đổi, template sẽ được render lại
+    //và khi render lại nó sẽ chạy cái directive 'v-scroll' sẽ chạy và thêm giá trị value chính là cái giá trị của biến 'scroll'
+    //sau đó cái style transform sẽ được xét dựa vào giá trị của v-scroll
     this.periodElementList = document.getElementsByClassName('period-item')
     this.runPeriod = setInterval(() => {
       const nextIndex = this.indexActive + 1
@@ -58,15 +63,6 @@ export default {
       }
       const {textList} = this.milestoneList[newIndex]
       this.$emit('changeText', textList)
-    }
-  },
-  methods: {
-    changePeriod(index) {
-      // console.log(event.target);
-      // console.log(event.target.offsetTop);
-      console.log(this.periodElementList[index]);
-      console.log(this.periodElementList[index].offsetTop);
-      this.scroll = this.periodElementList[index].offsetTop
     }
   },
   directives: {
