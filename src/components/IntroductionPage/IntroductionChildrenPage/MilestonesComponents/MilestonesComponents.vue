@@ -5,7 +5,10 @@
     </div>
     <div class="wrapper">
       <b-row>
-        <carousel-vertical @changeText="textList = $event"/>
+        <carousel-vertical
+          :list="milestoneList"
+          @changeIndex="textList = milestoneList[$event].textList"
+        />
         <content-text :textList="textList"/>
       </b-row>
     </div>
@@ -13,9 +16,8 @@
 </template>
 
 <script>
-import CarouselVertical from './CarouselVertical.vue'
-import ContentText from './ContentText.vue'
 import milestoneList from './data/milestoneList'
+import ContentText from './ContentText.vue'
 
 export default {
   data() {
@@ -24,7 +26,6 @@ export default {
     }
   },
   components: {
-    CarouselVertical,
     ContentText
   }
 }
@@ -35,8 +36,6 @@ export default {
     &:after {
       content: '';
       display: block;
-      // width: 50%;
-      // height: 100%;
       width: 500px;
       height: 400px;
       background-image: url(https://www.datxanh.vn/template/tint/images/setting.gif);

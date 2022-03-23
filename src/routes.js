@@ -5,6 +5,7 @@ import CulturePage from '@/pages/IntroductionPage/CulturePage'
 import SystemPage from '@/pages/IntroductionPage/SystemPage'
 import ActivityPage from '@/pages/IntroductionPage/ActivityPage'
 import PartnerPage from '@/pages/IntroductionPage/PartnerPage'
+import PrizePage from '@/pages/IntroductionPage/PrizePage'
 
 const routes = [
   {
@@ -34,6 +35,10 @@ const routes = [
       {
         path: '/partner',
         component: PartnerPage
+      },
+      {
+        path: '/prize',
+        component: PrizePage
       },
     ]
   },

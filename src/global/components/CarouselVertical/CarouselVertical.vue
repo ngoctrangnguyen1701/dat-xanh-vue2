@@ -3,7 +3,7 @@
     <div class="display-period position-relative">
       <div class="frame-period postion-absolute" v-scroll="scroll">
         <div
-          v-for="(item, index) in milestoneList"
+          v-for="(item, index) in list"
           :key="index"
           class="period-item d-flex align-items-center py-2"
           :class="index === indexActive ? 'active' : ''"
@@ -17,12 +17,10 @@
 </template>
 
 <script>
-import milestoneList from './data/milestoneList'
-
 export default {
+  props: ['list'],
   data() {
     return {
-      milestoneList,
       scroll: 0,
       periodElementList: [],
       indexActive: 0,
@@ -39,7 +37,8 @@ export default {
     this.periodElementList = document.getElementsByClassName('period-item')
     this.runPeriod = setInterval(() => {
       const nextIndex = this.indexActive + 1
-      if(nextIndex > milestoneList.length - 1) {
+      // if(nextIndex > milestoneList.length - 1) {
+      if(nextIndex > this.list.length - 1) {
         //nếu index được active tiếp theo lớn hơn index cuối cùng trong mảng thì cho nó cuộn về thằng đầu tiên
         this.indexActive = 0
       }
@@ -56,13 +55,15 @@ export default {
     indexActive(newIndex) {
       // console.log({newIndex});
       // console.log(milestoneList.length - 4);
-      if(newIndex < milestoneList.length - 4) {
+      // if(newIndex < milestoneList.length - 4) {
+      if(newIndex < this.list.length - 4) {
         //6 vị trí cuối sẽ không có cuộn slide,
         //ở đây do length bằng 15, nên sẽ cuộn đến vị trí thứ 10
         this.scroll = this.periodElementList[newIndex].offsetTop
       }
-      const {textList} = this.milestoneList[newIndex]
-      this.$emit('changeText', textList)
+      // const {textList} = this.milestoneList[newIndex]
+      // this.$emit('changeText', textList)
+      this.$emit('changeIndex', newIndex)
     }
   },
   directives: {
@@ -76,5 +77,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import './scss/carouselVerticalStyle.scss';
+  @import './carouselVerticalStyle.scss';
 </style>

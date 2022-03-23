@@ -25,7 +25,7 @@ const navbarList = [
       },
       {
         label: 'Giải thưởng',
-        link: '/',
+        link: '/prize',
       },
     ]
   },
