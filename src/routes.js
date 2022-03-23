@@ -3,6 +3,8 @@ import IntroductionPage from '@/pages/IntroductionPage/IntroductionPage'
 import IntroductionChildrenPage from '@/pages/IntroductionPage/IntroductionChildrenPage'
 import CulturePage from '@/pages/IntroductionPage/CulturePage'
 import SystemPage from '@/pages/IntroductionPage/SystemPage'
+import ActivityPage from '@/pages/IntroductionPage/ActivityPage'
+import PartnerPage from '@/pages/IntroductionPage/PartnerPage'
 
 const routes = [
   {
@@ -24,7 +26,15 @@ const routes = [
       {
         path: '/system',
         component: SystemPage
-      }
+      },
+      {
+        path: '/activity',
+        component: ActivityPage
+      },
+      {
+        path: '/partner',
+        component: PartnerPage
+      },
     ]
   },
 ]

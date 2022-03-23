@@ -32,7 +32,7 @@
 </template>
 
 <script>
-  import partnerList from './data/partnerList'
+  import partnerList from '@/global/data/partnerList'
   import PartnerItem from './PartnerItem.vue'
   import IconBack from './IconBack.vue'
   import IconNext from './IconNext.vue'

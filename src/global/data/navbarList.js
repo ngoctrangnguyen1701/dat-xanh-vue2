@@ -17,11 +17,11 @@ const navbarList = [
       },
       {
         label: 'Lĩnh vực hoạt động',
-        link: '/',
+        link: '/activity',
       },
       {
         label: 'Đối tác',
-        link: '/',
+        link: '/partner',
       },
       {
         label: 'Giải thưởng',
