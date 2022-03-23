@@ -41,9 +41,11 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+  @import '@/scss/variables.scss';
+
   .column-left {
     font-size: 60px;
-    color: #064d92;
+    color: $color-blue4;
 
     p {
       margin-bottom: 0;

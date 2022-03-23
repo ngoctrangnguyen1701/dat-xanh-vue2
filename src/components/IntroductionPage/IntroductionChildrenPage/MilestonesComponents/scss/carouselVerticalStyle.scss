@@ -1,3 +1,5 @@
+@import '@/scss/variables.scss';
+
 .display-period {
   height: 400px;
   overflow: hidden;
@@ -35,14 +37,14 @@
 
       &.active {
         h3 {
-          color: #064d92;
+          color: $color-blue4;
           font-weight: bold;
         }
         .dot {
           &:after {
             width: 15px;
             height: 15px;
-            background: #064d92;
+            background: $color-blue4;
           }
         }
       }

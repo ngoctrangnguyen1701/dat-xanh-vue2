@@ -1,16 +1,16 @@
 <template>
-  <!-- <div
-    class="navbar-item postion-relative d-none d-lg-flex"
-    style="min-width: 70px; max-width: 150px"
-    @mouseenter="onHover($event.target)"
-    @mouseleave="isHovering = false"
-  > -->
   <div
-    class="navbar-item postion-relative d-none d-lg-flex"
+    class="navbar-item postion-relative d-none d-lg-flex py-3"
     style="width: 11.5%; max-width: 140px"
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
+  <!-- <div
+    class="navbar-item postion-relative d-none d-lg-flex py-3"
+    style="width: 11.5%; max-width: 140px"
+    @mouseenter="onHover($event.target)"
+    @mouseleave="isLeaveNavbar = true"
+  > -->
     <router-link
       :to="item.linkParent"
       class="label-parent"
@@ -43,7 +43,9 @@ export default {
   data() {
     return {
       isHovering: false,
-      bgHoverHeight: 0
+      bgHoverHeight: 0,
+      isLeaveNavbar: false,
+      isLeaveBgWhiteBottom: false
     }
   },
   methods: {
@@ -72,8 +74,10 @@ export default {
 
     &:hover {
       .navbar-submenu {
+        // display: block;
         opacity: 1;
         transform: translateY(0);
+        z-index: 101;
       }
       a {
         color: $color-text;
@@ -89,11 +93,14 @@ export default {
   .navbar-submenu {
     position: absolute;
     top: 100%;
-    z-index: 101;
+    z-index: -101;
+    // z-index: 101;
     
-    transition: .5s;
+    // display: none;
     opacity: 0;
     transform: translateY(10px);
+    transition-duration: .5s;
+    transition-property: opacity, transform;
 
     .submenu-item {
       padding-top: 15px;

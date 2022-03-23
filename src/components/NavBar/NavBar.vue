@@ -4,7 +4,7 @@
       <div class="d-flex flex-wrap align-items-center">
         <b-col cols="2" class="pl-0">LOGO</b-col>
         <b-col cols="10" class="px-0">
-          <b-row class="py-3 align-items-center justify-content-end justify-content-lg-between">
+          <b-row class="align-items-center justify-content-end justify-content-lg-between">
             <div class="navbar-item icon-home d-none d-lg-block">
               <router-link to="/" class="text-white">
                 <i class="fa-solid fa-house"></i>

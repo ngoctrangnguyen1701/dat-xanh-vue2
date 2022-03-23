@@ -1,7 +1,7 @@
 import HomePage from '@/pages/HomePage.vue'
-import IntroductionPage from '@/pages/IntroductionPage.vue'
-import IntroductionChildrenPage from '@/components/IntroductionPage/IntroductionPage/IntroductionChildrenPage.vue'
-
+import IntroductionPage from '@/pages/IntroductionPage/IntroductionPage.vue'
+import IntroductionChildrenPage from '@/pages/IntroductionPage/IntroductionChildrenPage.vue'
+import CulturePage from '@/pages/IntroductionPage/CulturePage.vue'
 
 const routes = [
   {
@@ -15,6 +15,10 @@ const routes = [
       {
         path:'',
         component: IntroductionChildrenPage
+      },
+      {
+        path: '/culture', //--> đường link này sẽ là 'localhost/culture', không phải là '/introduction/culture'
+        component: CulturePage
       }
     ]
   },
