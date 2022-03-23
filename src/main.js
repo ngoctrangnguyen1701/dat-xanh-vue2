@@ -8,6 +8,8 @@ import BtnReadMore from './global/components/BtnReadMore.vue'
 import GlobalTitle from './global/components/GlobalTitle.vue'
 import NavBarMenu2 from './global/components/NavBarMenu2.vue'
 import BgHeader from './global/components/BgHeader'
+import GlobalSystemCompany from './global/components/GlobalSystemCompany/GlobalSystemCompany'
+
 import routes from './routes'
 import VueRouter from 'vue-router'
 
@@ -19,6 +21,7 @@ Vue.component('GlobalTitle', GlobalTitle)
 Vue.component('BtnReadMore', BtnReadMore)
 Vue.component('NavBarMenu2', NavBarMenu2)
 Vue.component('BgHeader', BgHeader)
+Vue.component('GlobalSystemCompany', GlobalSystemCompany)
 
 const router = new VueRouter({routes})
 new Vue({

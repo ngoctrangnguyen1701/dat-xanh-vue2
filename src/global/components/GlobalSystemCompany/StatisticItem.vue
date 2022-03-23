@@ -1,6 +1,6 @@
 <template>
   <div
-    class="statistic-item mt-3 px-3" style="width: 110px"
+    class="statistic-item mt-3 px-3"
     @click="$emit('input', index)"
     :class="value === index && 'active'"
   >
@@ -19,7 +19,11 @@ export default {
 
 <style lang="scss" scoped>
   .statistic-item {
+    width: 20%;
+    min-width: 110px;
+    max-width: 140px;
     cursor: pointer;
+    
     .circle {
       margin: 0 auto;
       padding-top: calc(100% - 10px); /* độ dày của border trên và dưới mỗi cái 5px  */

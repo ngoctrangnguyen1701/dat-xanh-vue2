@@ -5,12 +5,6 @@
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
-  <!-- <div
-    class="navbar-item postion-relative d-none d-lg-flex py-3"
-    style="width: 11.5%; max-width: 140px"
-    @mouseenter="onHover($event.target)"
-    @mouseleave="isLeaveNavbar = true"
-  > -->
     <router-link
       :to="item.linkParent"
       class="label-parent"
@@ -44,8 +38,6 @@ export default {
     return {
       isHovering: false,
       bgHoverHeight: 0,
-      isLeaveNavbar: false,
-      isLeaveBgWhiteBottom: false
     }
   },
   methods: {

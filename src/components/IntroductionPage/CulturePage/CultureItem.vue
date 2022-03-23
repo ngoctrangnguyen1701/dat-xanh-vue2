@@ -11,7 +11,7 @@
           class="content-text-item mr-3 mt-3 d-flex align-items-center"
         >
           <div class="bg-img-icon"></div>
-          <span class="d-block flex-grow-1" style="width: 80%">{{text}}</span>
+          <span class="d-block flex-grow-1">{{text}}</span>
         </div>
       </div>    
     </b-col>

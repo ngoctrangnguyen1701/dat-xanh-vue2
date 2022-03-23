@@ -13,7 +13,7 @@ const navbarList = [
       },
       {
         label: 'Hệ thống',
-        link: '/',
+        link: '/system',
       },
       {
         label: 'Lĩnh vực hoạt động',
