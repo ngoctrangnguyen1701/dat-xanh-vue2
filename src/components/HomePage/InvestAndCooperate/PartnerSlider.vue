@@ -41,7 +41,6 @@
     data() {
       return {
         slide: 0,
-        sliding: null,
         slideList: []
       }
     },

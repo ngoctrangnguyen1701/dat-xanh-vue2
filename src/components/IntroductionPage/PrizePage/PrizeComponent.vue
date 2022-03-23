@@ -1,15 +1,15 @@
 <template>
   <section class="milestones position-relative py-5">
-    <div class="mb-4">
+    <div class="mb-5">
       <global-title title="GIẢI THƯỞNG"/>
     </div>
     <div class="wrapper">
       <b-row>
         <carousel-vertical
           :list="prizeList"
-          @changeIndex="prizeInsideList = prizeList[$event].prizeList"
+          @changeIndex="prizeItem = prizeList[$event]"
         />
-        <content-text/>
+        <content-text :item="prizeItem"/>
       </b-row>
     </div>
   </section>
@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       prizeList,
-      prizeInsideList: prizeList[0].prizeList
+      prizeItem: prizeList[0],
     }
   },
 }

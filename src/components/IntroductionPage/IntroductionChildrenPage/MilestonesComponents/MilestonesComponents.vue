@@ -22,6 +22,7 @@ import ContentText from './ContentText.vue'
 export default {
   data() {
     return {
+      milestoneList,
       textList: milestoneList[0].textList
     }
   },

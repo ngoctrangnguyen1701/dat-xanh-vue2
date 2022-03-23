@@ -25,9 +25,7 @@
             title="ĐỐI TÁC"
             position="left"
           />
-          <!-- <div> -->
-            <PartnerSlider/>
-          <!-- </div> -->
+          <PartnerSlider/>
         </div>
       </b-col>
     </div>

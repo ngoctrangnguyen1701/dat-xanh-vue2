@@ -52,6 +52,14 @@ export default {
   },
   components: {
     BgWhiteBottom
+  },
+  computed: {
+    isActiveLink() {
+      console.log(this.$route);
+      const result = item.linkList.findIndex(link => link.label.includes(this.$route.path))
+      console.log(result);
+      return result > -1 ? true : false
+    }
   }
 };
 </script>
@@ -78,6 +86,10 @@ export default {
       .label-parent {
         color: #26b3ef;
       }
+    }
+
+    &.active {
+      color: #26b3ef;
     }
   }
 
