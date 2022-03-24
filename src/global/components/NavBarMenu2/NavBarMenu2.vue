@@ -28,7 +28,7 @@
             :key="index"
             :to="item.link"
             :class="index === list.length - 1 ? 'd-block' : 'd-block mb-3'"
-            :style="item.link.includes($route.path) ? 'color: #0066b3' : 'color: #333333'"
+            :style="item.link === $route.path ? 'color: #0066b3' : 'color: #333333'"
           >
             {{item.label.toUpperCase()}}
           </router-link>

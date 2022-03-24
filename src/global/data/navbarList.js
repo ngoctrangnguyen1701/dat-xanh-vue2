@@ -31,114 +31,114 @@ const navbarList = [
   },
   {
     labelParent: 'CỔ PHIẾU',
-    linkParent: '/',
+    linkParent: '/stock',
     linkList: [
       {
         label: 'Cổ phiếu',
-        link: '/',
+        link: '',
       },
       {
         label: 'Đại hội đồng cổ đông',
-        link: '/',
+        link: '',
       },
       {
         label: 'Thông báo cổ đông',
-        link: '/',
+        link: '',
       },
       {
         label: 'Báo cáo',
-        link: '/',
+        link: '',
       },
       {
         label: 'Hồ sơ năng lực',
-        link: '/',
+        link: '',
       },
 
     ]
   },
   {
     labelParent: 'DỰ ÁN',
-    linkParent: '/',
+    linkParent: '',
     linkList: [
       {
         label: 'Gem Sky World',
-        link: '/',
+        link: '',
       },
       {
         label: 'Opal Skyline',
-        link: '/',
+        link: '',
       },
       {
         label: 'Opal Boulevard',
-        link: '/',
+        link: '',
       },
     ]
   },
   {
     labelParent: 'TIN TỨC',
-    linkParent: '/',
+    linkParent: '',
     linkList: [
       {
         label: 'Tin Đất Xanh',
-        link: '/',
+        link: '',
       },
       {
         label: 'Hoạt động cộng đồng',
-        link: '/',
+        link: '',
       },
       {
         label: 'Văn hóa Đất Xanh',
-        link: '/',
+        link: '',
       },
       {
         label: 'Tin tức thị trường',
-        link: '/',
+        link: '',
       },
     ]
   },
   {
     labelParent: 'TUYỂN DỤNG',
-    linkParent: '/',
+    linkParent: '',
     linkList: [
       {
         label: 'Chiến lược nhân sự',
-        link: '/',
+        link: '',
       },
       {
         label: 'Chính sách nhân sự',
-        link: '/',
+        link: '',
       },
       {
         label: 'Tin tuyển dụng',
-        link: '/',
+        link: '',
       },
       {
         label: 'Quy định hồ sơ',
-        link: '/',
+        link: '',
       },
     ]
   },
   {
     labelParent: 'THƯ VIỆN',
-    linkParent: '/',
+    linkParent: '',
     linkList: [
       {
         label: 'Hình ảnh',
-        link: '/',
+        link: '',
       },
       {
         label: 'Video',
-        link: '/',
+        link: '',
       },
       {
         label: 'Tư liệu',
-        link: '/',
+        link: '',
       },
     ]
   },
   {
     labelParent: 'LIÊN HỆ',
-    linkParent: '/',
+    linkParent: '',
     linkList: []
   },
 ]

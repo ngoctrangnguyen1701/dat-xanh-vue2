@@ -1,6 +1,6 @@
 <template>
   <section id="header-navbar" class="position-relative">
-    <div class="wrapper">
+    <div class="wrapper py-3 py-lg-0">
       <div class="d-flex flex-wrap align-items-center">
         <b-col cols="2" class="pl-0">LOGO</b-col>
         <b-col cols="10" class="px-0">

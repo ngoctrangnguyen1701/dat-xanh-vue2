@@ -8,6 +8,7 @@
     <router-link
       :to="item.linkParent"
       class="label-parent"
+      :class="isActiveLink && 'active'"
     >
       {{ item.labelParent }}
     </router-link>
@@ -38,6 +39,7 @@ export default {
     return {
       isHovering: false,
       bgHoverHeight: 0,
+      cloneSubmenuList: [...this.item.linkList]
     }
   },
   methods: {
@@ -55,9 +57,9 @@ export default {
   },
   computed: {
     isActiveLink() {
-      console.log(this.$route);
-      const result = item.linkList.findIndex(link => link.label.includes(this.$route.path))
-      console.log(result);
+      const result = this.item.linkList.findIndex(link => link.link === this.$route.path)
+      //nếu như mà trong cái linkList có cái phần tử có giá trị của thuộc tính 'link'
+      //bằng với giá trị của cái thằng route thì cho nó active lên
       return result > -1 ? true : false
     }
   }
@@ -72,24 +74,24 @@ export default {
     display: none;
     text-align: center;
 
+    .label-parent {
+      color: $color-text;
+
+      &.active {
+        color: #26b3ef;
+      }
+    }
+
     &:hover {
       .navbar-submenu {
-        // display: block;
         opacity: 1;
         transform: translateY(0);
         z-index: 101;
-      }
-      a {
-        color: $color-text;
       }
 
       .label-parent {
         color: #26b3ef;
       }
-    }
-
-    &.active {
-      color: #26b3ef;
     }
   }
 
@@ -99,9 +101,9 @@ export default {
     top: 100%;
     z-index: -101;
     // z-index: 101;
-    
-    // display: none;
+
     opacity: 0;
+    // opacity: 1;
     transform: translateY(10px);
     transition-duration: .5s;
     transition-property: opacity, transform;

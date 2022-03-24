@@ -71,12 +71,12 @@ export default {
   },
 };
 </script>
-,
 
 <style scope lang="scss">
+@import '@/scss/mixins.scss';
+
 .system-company {
-  background-image: url(https://datxanh.vn/template/tint/modules/main/images/bg-hethong.jpg);
-  background-size: cover;
+  @include bg-img('https://datxanh.vn/template/tint/modules/main/images/bg-hethong.jpg', 'left');
   padding: 80px 0;
 }
 

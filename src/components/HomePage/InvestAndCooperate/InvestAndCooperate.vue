@@ -43,17 +43,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '@/scss/mixins.scss';
+
   .bg-column-left {
-    background-image: url(https://datxanh.vn/assets/uploads/myfiles/images/home/hop-tac.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include bg-img('https://datxanh.vn/assets/uploads/myfiles/images/home/hop-tac.jpg', 'center');
   }
 
   .bg-title {
-    background-image: url(https://datxanh.vn/template/tint/modules/main/images/bg-dautu.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    @include bg-img('https://datxanh.vn/template/tint/modules/main/images/bg-dautu.jpg', 'right');
     padding-top: 80px;
   }
 

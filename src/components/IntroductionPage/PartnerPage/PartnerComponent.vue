@@ -37,11 +37,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+  @import '@/scss/mixins.scss';
+
   .bg-column-right {
-    background-image: url(https://www.datxanh.vn/assets/uploads/images/post/dau-tu_252202195612.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include bg-img('https://www.datxanh.vn/assets/uploads/images/post/dau-tu_252202195612.jpg', 'center');
     padding: 15% 0;
   }
 </style>

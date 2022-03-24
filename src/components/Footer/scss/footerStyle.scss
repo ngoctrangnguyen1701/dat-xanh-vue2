@@ -1,8 +1,7 @@
+@import '@/scss/mixins.scss';
+
 footer {
-  background-image: url(https://datxanh.vn/template/tint/images/bgFooter.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  @include bg-img('https://datxanh.vn/template/tint/images/bgFooter.jpg', 'center');
 }
 
 .bg-footer-opacity {

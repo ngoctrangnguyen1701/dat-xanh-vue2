@@ -33,15 +33,16 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+  @import '@/scss/mixins.scss';
+
   .milestones {
     &:after {
       content: '';
       display: block;
       width: 500px;
       height: 400px;
-      background-image: url(https://www.datxanh.vn/template/tint/images/setting.gif);
-      background-position: right;
-      background-repeat: no-repeat;
+      
+      @include bg-img('https://www.datxanh.vn/template/tint/images/setting.gif', 'center');
       background-size: 80%;
       mix-blend-mode: darken;
 

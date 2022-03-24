@@ -31,5 +31,4 @@ export default {
     InvestAndCooperate,
   }  
 }
-</script>,
-    GlobalSystemCompany
+</script>

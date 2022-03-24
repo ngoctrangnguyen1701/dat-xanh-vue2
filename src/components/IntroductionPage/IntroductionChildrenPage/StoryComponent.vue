@@ -42,6 +42,7 @@ export default {
 
 <style lang='scss' scoped>
   @import '@/scss/variables.scss';
+  @import '@/scss/mixins.scss';
 
   .column-left {
     font-size: 60px;
@@ -52,10 +53,7 @@ export default {
     }
   }
   .bg-story {
-    background-image: url(https://www.datxanh.vn/assets/uploads/images/post/bg-history-1_2122020195734_15320211093.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include bg-img('https://www.datxanh.vn/assets/uploads/images/post/bg-history-1_2122020195734_15320211093.jpg', 'center');
     padding: 15% 0;
   }
 </style>

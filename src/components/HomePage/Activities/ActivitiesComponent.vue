@@ -36,9 +36,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '@/scss/mixins.scss';
+
   .title {
     padding: 60px 0 30px ;
-    background-image: url(https://www.datxanh.vn/template/tint/modules/main/images/bgactivity.jpg);
-    background-size: cover;
+    @include bg-img('https://www.datxanh.vn/template/tint/modules/main/images/bgactivity.jpg', 'left');
   }
 </style>

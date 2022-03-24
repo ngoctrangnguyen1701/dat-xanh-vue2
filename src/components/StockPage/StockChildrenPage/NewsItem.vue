@@ -3,7 +3,8 @@
     <img class="w-100" :src="item.imgUrl">
     <div class="content">
       <h3>{{item.title}}</h3>
-      <p class="mb-5 mt-3">{{item.description}}</p>
+      <span class="d-block">{{item.date}}</span>
+      <p>{{item.description}}</p>
       <btn-read-more/>
     </div>
   </b-col>
@@ -39,6 +40,7 @@ export default {
       -webkit-line-clamp: 3;
       //hiển thị thành 3 dòng sau đó sẽ là dấu ba chấm
       -webkit-box-orient: vertical;
+      height: 80px;
     }
   }
 </style>

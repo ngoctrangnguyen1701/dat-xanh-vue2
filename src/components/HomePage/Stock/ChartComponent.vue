@@ -11,7 +11,7 @@
         <p class="number-large">-0.005 <span style="font-size: 12px">(-0.12%)</span></p>
       </div>
     </div>
-    <!-- Chart -->
+    <!-- CHART -->
     <div>
       <LineChart
         :chart-data="datacollection"

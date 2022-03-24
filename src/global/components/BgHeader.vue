@@ -17,7 +17,6 @@ export default {
 
 <style lang="scss" scoped>
   .bg-header {
-    // background-image: url('https://datxanh.vn/assets/uploads/myfiles/files/banner(1).jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

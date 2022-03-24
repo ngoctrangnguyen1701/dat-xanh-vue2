@@ -19,13 +19,14 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+  @import '@/scss/mixins.scss';
+
   .content-text-item {
     .bg-img {
       width: 14px;
       height: 12px;
-      background-image: url(https://www.datxanh.vn/template/tint/images/icon-bullets.svg);
-      background-size: cover;
       margin-right: 10px;
+      @include bg-img('https://www.datxanh.vn/template/tint/images/icon-bullets.svg', 'center');
     }
   }
 </style>

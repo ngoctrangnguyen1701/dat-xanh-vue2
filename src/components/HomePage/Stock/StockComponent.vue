@@ -37,11 +37,10 @@ export default {
 </script>
 
 <style lang="scss" scope>
+  @import '@/scss/mixins.scss';
+
   .stock-bg-title {
-    background-image: url('https://www.datxanh.vn/template/tint/modules/main/images/bgcodong.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include bg-img('https://www.datxanh.vn/template/tint/modules/main/images/bgcodong.jpg', 'center');
     padding: 80px 0 50px;
     margin-top: -15px;
   }
