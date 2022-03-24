@@ -43,15 +43,15 @@ const navbarList = [
       },
       {
         label: 'Thông báo cổ đông',
-        link: '',
+        link: '/message',
       },
       {
         label: 'Báo cáo',
-        link: '',
+        link: '/report',
       },
       {
         label: 'Hồ sơ năng lực',
-        link: '',
+        link: '/profile',
       },
 
     ]

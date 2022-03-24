@@ -70,7 +70,8 @@ const routes = [
       },
       {
         path: '/shareholder',
-        component: ShareholderPage
+        component: ShareholderPage,
+        alias: ['/message', '/report', '/profile']
       }
     ]
   },
