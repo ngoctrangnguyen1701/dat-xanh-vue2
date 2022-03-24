@@ -1,0 +1,31 @@
+.shareholder-frame {
+  background-color: #f1f1f1;
+}
+
+.shareholder-item {
+  margin-bottom: 50px;
+
+  .year {
+    width: 215px;
+    background-color: #064d92;
+    margin-bottom: 15px;
+
+    font-size: 33px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .frame-list-item {
+    border-top: 1px dashed #333333;
+    align-items: center;
+    padding: 15px 0;
+
+    font-size: 18px;
+    color: #333333;
+
+    &.has-border-bottom {
+      border-bottom: 1px dashed #333333;
+    }
+  }
+}

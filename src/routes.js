@@ -23,6 +23,7 @@ const PrizePage = () => import ('@/pages/IntroductionPage/PrizePage')
 /* STOCK PAGE */
 const StockPage = () => import ('@/pages/StockPage/StockPage')
 const StockChildrenPage = () => import ('@/pages/StockPage/StockChildrenPage')
+const ShareholderPage = () => import ('@/pages/StockPage/ShareholderPage')
 
 const routes = [
   {
@@ -66,6 +67,10 @@ const routes = [
       {
         path: '',
         component: StockChildrenPage
+      },
+      {
+        path: '/shareholder',
+        component: ShareholderPage
       }
     ]
   },

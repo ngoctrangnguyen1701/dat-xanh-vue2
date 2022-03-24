@@ -34,8 +34,6 @@
 <script>
   import partnerList from '@/global/data/partnerList'
   import PartnerItem from './PartnerItem.vue'
-  import IconBack from './IconBack.vue'
-  import IconNext from './IconNext.vue'
 
   export default {
     data() {
@@ -46,8 +44,6 @@
     },
     components: {
       PartnerItem,
-      IconBack,
-      IconNext,
     },
     created() {
       // https://stackoverflow.com/questions/42761068/paginate-javascript-array

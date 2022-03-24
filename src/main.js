@@ -10,6 +10,8 @@ import NavBarMenu2 from './global/components/NavBarMenu2/NavBarMenu2.vue'
 import BgHeader from './global/components/BgHeader'
 import GlobalSystemCompany from './global/components/GlobalSystemCompany/GlobalSystemCompany'
 import CarouselVertical from './global/components/CarouselVertical/CarouselVertical'
+import IconBack from './global/components/IconBack'
+import IconNext from './global/components/IconNext'
 
 import routes from './routes'
 import VueRouter from 'vue-router'
@@ -24,6 +26,8 @@ Vue.component('NavBarMenu2', NavBarMenu2)
 Vue.component('BgHeader', BgHeader)
 Vue.component('GlobalSystemCompany', GlobalSystemCompany)
 Vue.component('CarouselVertical', CarouselVertical)
+Vue.component('IconBack', IconBack)
+Vue.component('IconNext', IconNext)
 
 const router = new VueRouter({routes})
 new Vue({

@@ -35,11 +35,11 @@ const navbarList = [
     linkList: [
       {
         label: 'Cổ phiếu',
-        link: '',
+        link: '/stock',
       },
       {
         label: 'Đại hội đồng cổ đông',
-        link: '',
+        link: '/shareholder',
       },
       {
         label: 'Thông báo cổ đông',

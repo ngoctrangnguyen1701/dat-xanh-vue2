@@ -104,7 +104,7 @@ export default {
 
     opacity: 0;
     // opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(20px);
     transition-duration: .5s;
     transition-property: opacity, transform;
 

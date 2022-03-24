@@ -20,13 +20,14 @@ export default {
   .content {
     background: #ebebeb;
     padding: 15px;
+    text-align: left;
+    color: #333333;
 
     h3 {
       height: 100px;
 
       font-size: 17px;
       font-weight: bold;
-      color: black;
       margin-bottom: 0;
     }
 

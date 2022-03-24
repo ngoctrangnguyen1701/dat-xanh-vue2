@@ -31,7 +31,7 @@ export default {
 
     position: fixed;
     left: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
     z-index: -100;
     transition: .5s;
 

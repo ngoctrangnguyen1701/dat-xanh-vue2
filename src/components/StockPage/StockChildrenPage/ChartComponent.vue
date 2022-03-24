@@ -18,11 +18,10 @@
             </div>
           </div>
           <!-- CHART -->
-          <!-- <div style="width: 50%"> -->
           <div>
             <LineChart
               :chart-data="datacollection"
-              height="70%"
+              :height="150"
             /> 
           </div>
         </div>
