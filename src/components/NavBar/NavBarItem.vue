@@ -35,11 +35,16 @@ import BgWhiteBottom from './BgWhiteBottom.vue'
 
 export default {
   props: ["item", 'index'],
+  mounted(){
+    console.log('mounted');
+  },
+  updated(){
+    console.log('updated');
+  },
   data() {
     return {
       isHovering: false,
       bgHoverHeight: 0,
-      cloneSubmenuList: [...this.item.linkList]
     }
   },
   methods: {
@@ -57,7 +62,17 @@ export default {
   },
   computed: {
     isActiveLink() {
-      const result = this.item.linkList.findIndex(link => link.link === this.$route.path)
+      console.log('set isActiveLink');
+      // const result = this.item.linkList.findIndex(link => link.link === this.$route.path)
+      const result = this.item.linkList.findIndex(link => {
+        // console.log(link);
+        // console.log(link.link);
+        // console.log(this.$route.path);
+        const x = link.link === this.$route.path
+        // console.log({x});
+        return x
+      })
+      console.log({result});
       //nếu như mà trong cái linkList có cái phần tử có giá trị của thuộc tính 'link'
       //bằng với giá trị của cái thằng route thì cho nó active lên
       return result > -1 ? true : false
