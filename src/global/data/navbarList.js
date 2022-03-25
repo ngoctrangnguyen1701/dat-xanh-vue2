@@ -58,7 +58,7 @@ const navbarList = [
   },
   {
     labelParent: 'DỰ ÁN',
-    linkParent: '',
+    linkParent: '/project',
     linkList: [
       {
         label: 'Gem Sky World',

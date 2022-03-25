@@ -1,9 +1,12 @@
 <template>
   <b-col sm="6" class="outstanding-project-item pl-0">
-    <a href="" class="d-flex align-items-center mt-3 text-decoration-none">
+    <router-link
+      class="d-flex align-items-center mt-3 text-decoration-none"
+      :to="item.link"
+    >
       <div class="line"></div>
-      <p class="mb-0">{{item}}</p>
-    </a>
+      <p class="mb-0">{{item.name}}</p>
+    </router-link>
   </b-col>
 </template>
 
@@ -43,7 +46,6 @@ export default {
 
     &:hover {
       .line {
-        // transform: scale(1);
         width: 60px;
         margin-right: 20px;
       }

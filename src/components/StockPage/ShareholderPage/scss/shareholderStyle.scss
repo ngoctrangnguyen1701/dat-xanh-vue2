@@ -1,13 +1,16 @@
+@import '@/scss/variables.scss';
+
 .shareholder-frame {
   background-color: #f1f1f1;
 }
 
 .shareholder-item {
   margin-bottom: 50px;
+  transition: .3s;
 
   .year {
     width: 215px;
-    background-color: #064d92;
+    background-color: $color-blue4;
     margin-bottom: 15px;
 
     font-size: 33px;

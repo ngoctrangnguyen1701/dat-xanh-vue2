@@ -1,6 +1,6 @@
 @mixin bg-img ($imgUrl, $position){
   background-image: url($imgUrl);
-  backgorund-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: $position;
 }

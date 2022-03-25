@@ -25,6 +25,9 @@ const StockPage = () => import ('@/pages/StockPage/StockPage')
 const StockChildrenPage = () => import ('@/pages/StockPage/StockChildrenPage')
 const ShareholderPage = () => import ('@/pages/StockPage/ShareholderPage')
 
+/* PROJECT */
+const ProjectPage = () => import('@/pages/ProjectPage/ProjectPage')
+
 const routes = [
   {
     path: '/',
@@ -75,6 +78,10 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/project',
+    component: ProjectPage
+  }
 ]
 
 export default routes
