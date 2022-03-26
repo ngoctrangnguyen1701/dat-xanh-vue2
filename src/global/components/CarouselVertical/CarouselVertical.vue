@@ -1,15 +1,24 @@
 <template>
   <b-col lg="3">
     <div class="display-period position-relative">
-      <div class="frame-period postion-absolute" v-scroll="scroll">
+      <div
+        class="frame-period postion-absolute d-flex d-lg-block"
+        v-scroll="{scrollType, scroll}"
+      >
         <div
           v-for="(item, index) in list"
           :key="index"
-          class="period-item d-flex align-items-center py-2"
+          class="period-item d-flex align-items-center py-2 flex-column flex-lg-row"
           :class="index === indexActive ? 'active' : ''"
         >
-          <h3 class="mb-0" @click="indexActive = index">{{item.period}}</h3>
-          <div class="dot" @click="indexActive = index"></div>
+          <h3 
+            class="mb-0 text-center text-lg-left"
+            @click="indexActive = index"
+          >{{item.period}}</h3>
+          <div
+            class="dot mt-2 mt-lg-0" 
+            @click="indexActive = index"
+          ></div>
         </div>
       </div>
     </div>
@@ -22,9 +31,11 @@ export default {
   data() {
     return {
       scroll: 0,
+      scrollType: window.screen.width > 992 ? 'vertical' : 'horizontal',
       periodElementList: [],
       indexActive: 0,
       runPeriod: null,
+      // isScrollHorizontal
     }
   },
   mounted() {
@@ -47,9 +58,24 @@ export default {
       }
     }, 4000)
     // }, 400000000000)
+
+    /* EVENT ON RESIZE */
+    window.addEventListener('resize', () => {
+      // console.log('event window resize');
+      this.updateScrollType()
+    })
+    console.log(window.screen.width);
+  },
+  methods: {
+    updateScrollType() {
+      this.scrollType = window.screen.width > 992 ? 'vertical' : 'horizontal'
+    }
   },
   unmounted() {
+    //khi component không còn được gắn vào DOM,
+    //sẽ clear cái setTimeout và cả sự kiện lắng nghe của window
     clearInterval(this.runPeriod)
+    window.removeEventListener('resize')
   },
   watch: {
     indexActive(newIndex) {
@@ -59,7 +85,12 @@ export default {
       if(newIndex < this.list.length - 4) {
         //6 vị trí cuối sẽ không có cuộn slide,
         //ở đây do length bằng 15, nên sẽ cuộn đến vị trí thứ 10
-        this.scroll = this.periodElementList[newIndex].offsetTop
+        if(this.scrollType === 'vertical') {
+          this.scroll = this.periodElementList[newIndex].offsetTop
+        }
+        else {
+          this.scroll = this.periodElementList[newIndex].offsetLeft
+        }
       }
       // const {textList} = this.milestoneList[newIndex]
       // this.$emit('changeText', textList)
@@ -70,7 +101,15 @@ export default {
     'scroll'(el, binding) {
       // console.log(el);
       // console.log(binding);
-      el.style.transform = `translateY(-${binding.value}px)`
+      const {scroll, scrollType} = binding.value
+      if(scrollType === 'vertical') {
+        // el.style.transform = `translateY(-${binding.value}px)`
+        el.style.transform = `translateY(-${scroll}px)`
+      }
+      else {
+        // el.style.transform = `translateX(-${binding.value}px)`
+        el.style.transform = `translateX(-${scroll}px)`
+      }
     }
   }
 }

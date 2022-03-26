@@ -12,6 +12,7 @@
         <content-text :textList="textList"/>
       </b-row>
     </div>
+    <div class="bg-gears d-none d-lg-block"></div>
   </section>
 </template>
 
@@ -36,15 +37,13 @@ export default {
   @import '@/scss/mixins.scss';
 
   .milestones {
-    &:after {
-      content: '';
-      display: block;
+    &.bg-gears {
       width: 500px;
       height: 400px;
       
       @include bg-img('https://www.datxanh.vn/template/tint/images/setting.gif', 'center');
       background-size: 80%;
-      mix-blend-mode: darken;
+      mix-blend-mode: darken; //cái này làm cho element nó nằm ở dưới, và mất cái khung viền xung quanh
 
       position: absolute;
       right: 0;

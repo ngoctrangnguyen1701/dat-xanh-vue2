@@ -5,7 +5,9 @@
       :key="index"
       class="content-text-item mr-3 mt-3 d-flex align-items-center"
     >
-      <div class="bg-img"></div>
+      <div class="icon">
+        <img src="https://www.datxanh.vn/template/tint/images/icon-bullets.svg" class="w-100">
+      </div>
       <span>{{item}}</span>
     </div>
   </b-col>
@@ -22,11 +24,9 @@ export default {
   @import '@/scss/mixins.scss';
 
   .content-text-item {
-    .bg-img {
+    .icon {
       width: 14px;
-      height: 12px;
       margin-right: 10px;
-      @include bg-img('https://www.datxanh.vn/template/tint/images/icon-bullets.svg', 'center');
     }
   }
 </style>

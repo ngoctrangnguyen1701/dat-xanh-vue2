@@ -24,9 +24,15 @@ export default {
 
     h1 {
       margin: 0;
-      font-size: 50px;
+      font-size: 25px;
       font-weight: bold;
       color: white;
+    }
+
+    @media (min-width: 992px) {
+      h1 {
+        font-size: 50px;
+      }
     }
   }
 </style>

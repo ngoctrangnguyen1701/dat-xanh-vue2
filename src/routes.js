@@ -38,7 +38,7 @@ const routes = [
     component: IntroductionPage,
     children: [
       {
-        path:'',
+        path:'/introduction',
         component: IntroductionChildrenPage
       },
       {

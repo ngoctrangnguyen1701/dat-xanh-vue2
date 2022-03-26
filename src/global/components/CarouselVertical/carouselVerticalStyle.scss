@@ -1,21 +1,31 @@
 @import '@/scss/variables.scss';
 
 .display-period {
-  height: 400px;
+  height: auto;
   overflow: hidden;
+
+  @media (min-width: 992px) {
+    height: 400px;
+  }
+
 
   .frame-period {
     transition: .5s;
 
     .period-item {
       h3 {
-        font-size: 40px;
+        font-size: 28px;
         color: black;
 
         width: 80%;
         max-width: 200px;
         min-width: 100px;
         cursor: pointer;
+      }
+      @media (min-width: 992px) {
+        h3 {
+          font-size: 40px;
+        }
       }
     
       .dot {

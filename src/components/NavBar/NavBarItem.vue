@@ -62,7 +62,7 @@ export default {
   },
   computed: {
     isActiveLink() {
-      console.log('set isActiveLink');
+      // console.log('set isActiveLink');
       // const result = this.item.linkList.findIndex(link => link.link === this.$route.path)
       const result = this.item.linkList.findIndex(link => {
         // console.log(link);
@@ -72,10 +72,11 @@ export default {
         // console.log({x});
         return x
       })
-      console.log({result});
+      // console.log({result});
       //nếu như mà trong cái linkList có cái phần tử có giá trị của thuộc tính 'link'
       //bằng với giá trị của cái thằng route thì cho nó active lên
       return result > -1 ? true : false
+      //chuyển qua xài method
     }
   }
 };
