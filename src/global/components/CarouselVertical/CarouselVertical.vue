@@ -64,10 +64,10 @@ export default {
       // console.log('event window resize');
       this.updateScrollType()
     })
-    console.log(window.screen.width);
   },
   methods: {
     updateScrollType() {
+      //màn hình mà nhỏ hơn 992px, carousel sẽ chuyển thành hàng ngang và scroll ngang
       this.scrollType = window.screen.width > 992 ? 'vertical' : 'horizontal'
     }
   },
