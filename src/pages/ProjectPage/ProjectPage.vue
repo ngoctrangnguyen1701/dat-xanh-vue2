@@ -4,16 +4,16 @@
       title="DỰ ÁN"
       imgUrl="https://www.datxanh.vn/template/tint/modules/project/images/banner.jpg"
     />
-    <project-component/>
+    <ProjectComponent/>
   </div>  
 </template>
 
 <script>
-import ProjectComponent from '@/components/ProjectPage/ProjectChildrenPage/ProjectComponent.vue'
+import ProjectComponent from '@/components/ProjectPage/ProjectComponent.vue'
 
 export default {
   components: {
-    ProjectComponent
+    ProjectComponent,
   }
 }
 </script>

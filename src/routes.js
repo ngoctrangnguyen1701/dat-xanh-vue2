@@ -38,27 +38,27 @@ const routes = [
     component: IntroductionPage,
     children: [
       {
-        path:'/introduction',
+        path:'/introduction/first',
         component: IntroductionChildrenPage
       },
       {
-        path: '/culture', //--> đường link này sẽ là 'localhost/culture', không phải là '/introduction/culture'
+        path: '/introduction/culture', //--> đường link này sẽ là 'localhost/culture', không phải là '/introduction/culture'
         component: CulturePage
       },
       {
-        path: '/system',
+        path: '/introduction/system',
         component: SystemPage
       },
       {
-        path: '/activity',
+        path: '/introduction/activity',
         component: ActivityPage
       },
       {
-        path: '/partner',
+        path: '/introduction/partner',
         component: PartnerPage
       },
       {
-        path: '/prize',
+        path: '/introduction/prize',
         component: PrizePage
       },
     ]
@@ -68,13 +68,13 @@ const routes = [
     component: StockPage,
     children: [
       {
-        path: '',
+        path: '/stock/first',
         component: StockChildrenPage
       },
       {
-        path: '/shareholder',
+        path: '/stock/shareholder',
         component: ShareholderPage,
-        alias: ['/message', '/report', '/profile']
+        alias: ['/stock/message', '/stock/report', '/stock/profile']
       }
     ]
   },

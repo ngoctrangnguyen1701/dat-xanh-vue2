@@ -1,12 +1,19 @@
 <template>
   <div class="wrapper">
     <div class="d-none d-lg-flex justify-content-between justify-content-xl-around border-bottom menu">
-      <router-link
+      <!-- <router-link
         v-for="(item, index) in list"
         :key="index"
         :to="item.link"
         class="menu-item pt-5 pb-3 position-relative"
         :class="item.link.includes($route.path) && 'active'"
+      > -->
+      <router-link
+        v-for="(item, index) in list"
+        :key="index"
+        :to="item.link"
+        class="menu-item pt-5 pb-3 position-relative"
+        active-class="active"
       >
         {{item.label.toUpperCase()}}
       </router-link>

@@ -5,10 +5,15 @@
     @mouseenter="onHover($event.target)"
     @mouseleave="isHovering = false"
   >
-    <router-link
+    <!-- <router-link
       :to="item.linkParent"
       class="label-parent"
       :class="isActiveLink && 'active'"
+    > -->
+    <router-link
+      :to="item.linkParent"
+      class="label-parent"
+      active-class="active"
     >
       {{ item.labelParent }}
     </router-link>

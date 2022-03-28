@@ -5,27 +5,27 @@ const navbarList = [
     linkList: [
       {
         label: 'Giới thiệu',
-        link: '/introduction',
+        link: '/introduction/first',
       },
       {
         label: 'Văn hóa doanh nghiệp',
-        link: '/culture',
+        link: '/introduction/culture',
       },
       {
         label: 'Hệ thống',
-        link: '/system',
+        link: '/introduction/system',
       },
       {
         label: 'Lĩnh vực hoạt động',
-        link: '/activity',
+        link: '/introduction/activity',
       },
       {
         label: 'Đối tác',
-        link: '/partner',
+        link: '/introduction/partner',
       },
       {
         label: 'Giải thưởng',
-        link: '/prize',
+        link: '/introduction/prize',
       },
     ]
   },
@@ -35,23 +35,23 @@ const navbarList = [
     linkList: [
       {
         label: 'Cổ phiếu',
-        link: '/stock',
+        link: '/stock/first',
       },
       {
         label: 'Đại hội đồng cổ đông',
-        link: '/shareholder',
+        link: '/stock/shareholder',
       },
       {
         label: 'Thông báo cổ đông',
-        link: '/message',
+        link: '/stock/message',
       },
       {
         label: 'Báo cáo',
-        link: '/report',
+        link: '/stock/report',
       },
       {
         label: 'Hồ sơ năng lực',
-        link: '/profile',
+        link: '/stock/profile',
       },
 
     ]
@@ -76,7 +76,7 @@ const navbarList = [
   },
   {
     labelParent: 'TIN TỨC',
-    linkParent: '',
+    linkParent: '/news',
     linkList: [
       {
         label: 'Tin Đất Xanh',
@@ -98,7 +98,7 @@ const navbarList = [
   },
   {
     labelParent: 'TUYỂN DỤNG',
-    linkParent: '',
+    linkParent: '/recruit',
     linkList: [
       {
         label: 'Chiến lược nhân sự',
@@ -120,7 +120,7 @@ const navbarList = [
   },
   {
     labelParent: 'THƯ VIỆN',
-    linkParent: '',
+    linkParent: '/library',
     linkList: [
       {
         label: 'Hình ảnh',
@@ -138,7 +138,7 @@ const navbarList = [
   },
   {
     labelParent: 'LIÊN HỆ',
-    linkParent: '',
+    linkParent: '/contact',
     linkList: []
   },
 ]
