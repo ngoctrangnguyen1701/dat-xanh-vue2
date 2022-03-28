@@ -1,7 +1,7 @@
 @import '@/scss/mixins.scss';
 
 footer {
-  @include bg-img('https://datxanh.vn/template/tint/images/bgFooter.jpg', 'center');
+  @include bg-img('https://datxanh.vn/template/tint/images/bgFooter.jpg', center);
 }
 
 .bg-footer-opacity {

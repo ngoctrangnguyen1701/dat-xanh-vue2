@@ -76,7 +76,7 @@ export default {
 @import '@/scss/mixins.scss';
 
 .system-company {
-  @include bg-img('https://datxanh.vn/template/tint/modules/main/images/bg-hethong.jpg', 'left');
+  @include bg-img('https://datxanh.vn/template/tint/modules/main/images/bg-hethong.jpg', left);
   padding: 80px 0;
 }
 

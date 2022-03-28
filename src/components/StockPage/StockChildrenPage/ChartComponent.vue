@@ -3,7 +3,7 @@
     <div class="mt-5 mb-4">
       <global-title title="CỔ PHIẾU"/>
     </div>
-    <b-row>
+    <div class="d-flex flex-wrap">
       <b-col lg="6">
         <div class="wrapper pr-0">
           <p style="font-size: 18px" class="text-dark">CTCP Tập đoàn Đất Xanh (HSX:DXG)</p>
@@ -27,8 +27,8 @@
         </div>
       </b-col>
       
-      <b-col lg="6" class="bg-column-right"></b-col>
-    </b-row>
+      <b-col lg="6" class="bg-column-right" style="min-height: 250px"></b-col>
+    </div>
   </section>
 </template>
 
@@ -84,6 +84,6 @@ export default {
   }
 
   .bg-column-right {
-    @include bg-img('https://www.datxanh.vn/assets/uploads/myfiles/files/Gioi-thieu/banner-co-phieu.jpg', 'center');
+    @include bg-img('https://www.datxanh.vn/assets/uploads/myfiles/files/Gioi-thieu/banner-co-phieu.jpg', top);
   }
 </style>

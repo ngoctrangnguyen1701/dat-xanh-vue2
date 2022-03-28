@@ -1,6 +1,6 @@
 <template>
   <Transition name="fade-scale">
-    <div class="frame-search" v-show="show" @click.stop>
+    <div class="frame-search bg-white" v-show="show" @click.stop>
       <input
         placeholder="Nhập nội dung tìm kiếm"
         class="form-control"

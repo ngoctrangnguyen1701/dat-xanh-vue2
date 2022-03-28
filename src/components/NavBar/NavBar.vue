@@ -92,8 +92,9 @@ export default {
     const body = document.getElementsByTagName("body")[0];
     // console.log(body);
     body.addEventListener("click", () => {
-      this.showFrameSearch = false;
-      this.showFrameFlag = false;
+      this.showFrameSearch = false
+      this.showFrameFlag = false
+      this.showNavBarMobile = false
     });
   },
   watch: {

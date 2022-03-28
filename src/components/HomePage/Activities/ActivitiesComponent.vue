@@ -40,6 +40,6 @@ export default {
 
   .title {
     padding: 60px 0 30px ;
-    @include bg-img('https://www.datxanh.vn/template/tint/modules/main/images/bgactivity.jpg', 'left');
+    @include bg-img('https://www.datxanh.vn/template/tint/modules/main/images/bgactivity.jpg', left);
   }
 </style>

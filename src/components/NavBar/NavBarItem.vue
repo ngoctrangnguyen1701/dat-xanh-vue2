@@ -35,12 +35,6 @@ import BgWhiteBottom from './BgWhiteBottom.vue'
 
 export default {
   props: ["item", 'index'],
-  mounted(){
-    console.log('mounted');
-  },
-  updated(){
-    console.log('updated');
-  },
   data() {
     return {
       isHovering: false,

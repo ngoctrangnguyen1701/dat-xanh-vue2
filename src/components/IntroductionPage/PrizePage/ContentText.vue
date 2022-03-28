@@ -12,9 +12,9 @@
         :key="index"
         img-src="https://www.datxanh.vn/template/tint/modules/personnel/images/bg-giaithuong.jpg"
       >
-        <div class="mx-auto carousel-img">
+        <b-col cols="4" lg="6" class="mx-auto carousel-img">
           <img :src="prize.imgUrl" class="img-fluid">
-        </div>
+        </b-col>
         <p class="mb-0 my-3 text-center" style="color: #333333">{{prize.text}}</p>
       </b-carousel-slide>
     </b-carousel>

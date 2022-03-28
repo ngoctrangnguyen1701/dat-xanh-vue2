@@ -1,9 +1,10 @@
 <template>
-  <b-row
+  <div
+    class="d-flex flex-wrap"
     :class="index % 2 ? 'culture-item flex-row-reverse' : 'culture-item'"
   >
-    <b-col lg="6" class="pr-lg-0">
-      <div class="wrapper pr-lg-0" :style="index % 2 && 'padding-left: 50px'">
+    <b-col lg="6" class="py-3 px-0">
+      <div class="wrapper pr-lg-0" :class="index % 2 && 'paddingLeft'">
         <h3>{{item.title}}</h3>
         <div
           v-for="(text, index) in item.textList"
@@ -19,7 +20,7 @@
       :style="`background-image: url(${item.imgUrl})`"
       class="bg-column-right"
     ></b-col>
-  </b-row>
+  </div>
 </template>
 
 <script>
@@ -60,8 +61,15 @@ export default {
   .bg-column-right {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     padding: 15% 0;
     //--> padding chỉnh theo phần trăm là phần trăm dựa vào cái width của elment cha chứa nó
+    min-height: 350px;
+  }
+
+  @media (min-width: 992px) {
+    .paddingLeft {
+      padding-left: 50px;
+    }
   }
 </style>

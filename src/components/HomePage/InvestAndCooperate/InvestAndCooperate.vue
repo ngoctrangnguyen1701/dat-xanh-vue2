@@ -46,11 +46,11 @@ export default {
   @import '@/scss/mixins.scss';
 
   .bg-column-left {
-    @include bg-img('https://datxanh.vn/assets/uploads/myfiles/images/home/hop-tac.jpg', 'center');
+    @include bg-img('https://datxanh.vn/assets/uploads/myfiles/images/home/hop-tac.jpg', center);
   }
 
   .bg-title {
-    @include bg-img('https://datxanh.vn/template/tint/modules/main/images/bg-dautu.jpg', 'right');
+    @include bg-img('https://datxanh.vn/template/tint/modules/main/images/bg-dautu.jpg', right);
     padding-top: 80px;
   }
 

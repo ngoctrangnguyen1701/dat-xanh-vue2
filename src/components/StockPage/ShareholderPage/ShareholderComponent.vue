@@ -22,7 +22,7 @@
           <div
             v-for="(subItem, subIndex) in item.list"
             :key="subIndex"
-            class="frame-list-item d-flex align-item-center"
+            class="frame-list-item d-flex flex-wrap align-item-center"
             :class="subIndex === item.list.length - 1 && 'has-border-bottom'"
           >
             <b-col lg="9">

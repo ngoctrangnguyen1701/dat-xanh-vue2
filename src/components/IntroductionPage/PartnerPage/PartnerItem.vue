@@ -1,5 +1,5 @@
 <template>
-  <b-col sm="2" class="my-3">
+  <b-col sm="2" class="my-3" style="min-width: 250px">
     <div class="border">
       <img :src="imgUrl">
     </div>

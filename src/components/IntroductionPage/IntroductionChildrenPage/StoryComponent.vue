@@ -55,7 +55,7 @@ export default {
     }    
   }
   .bg-story {
-    @include bg-img('https://www.datxanh.vn/assets/uploads/images/post/bg-history-1_2122020195734_15320211093.jpg', 'center');
+    @include bg-img('https://www.datxanh.vn/assets/uploads/images/post/bg-history-1_2122020195734_15320211093.jpg', center);
     padding: 15% 0;
   }
 </style>

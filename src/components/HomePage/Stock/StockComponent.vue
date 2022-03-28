@@ -40,7 +40,7 @@ export default {
   @import '@/scss/mixins.scss';
 
   .stock-bg-title {
-    @include bg-img('https://www.datxanh.vn/template/tint/modules/main/images/bgcodong.jpg', 'center');
+    @include bg-img('https://www.datxanh.vn/template/tint/modules/main/images/bgcodong.jpg', center);
     padding: 80px 0 50px;
     margin-top: -15px;
   }
