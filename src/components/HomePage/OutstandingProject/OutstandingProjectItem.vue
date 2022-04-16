@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
   .outstanding-project-item {
-
+    min-width: 300px;
     .line {
       position: relative;
       height: 1px;

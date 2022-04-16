@@ -1,13 +1,5 @@
 import HomePage from '@/pages/HomePage'
 
-// import IntroductionPage from '@/pages/IntroductionPage/IntroductionPage'
-// import IntroductionChildrenPage from '@/pages/IntroductionPage/IntroductionChildrenPage'
-// import CulturePage from '@/pages/IntroductionPage/CulturePage'
-// import SystemPage from '@/pages/IntroductionPage/SystemPage'
-// import ActivityPage from '@/pages/IntroductionPage/ActivityPage'
-// import PartnerPage from '@/pages/IntroductionPage/PartnerPage'
-// import PrizePage from '@/pages/IntroductionPage/PrizePage'
-
 //LAZY LOAD CHO ROUTER
 // https://viblo.asia/p/vue-router-lazy-loading-routes-Qbq5QvpRKD8
 
@@ -38,7 +30,7 @@ const routes = [
     component: IntroductionPage,
     children: [
       {
-        path:'/introduction/first',
+        path:'/',
         component: IntroductionChildrenPage
       },
       {
@@ -68,7 +60,7 @@ const routes = [
     component: StockPage,
     children: [
       {
-        path: '/stock/first',
+        path: '/',
         component: StockChildrenPage
       },
       {
@@ -81,6 +73,10 @@ const routes = [
   {
     path: '/project',
     component: ProjectPage
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ]
 

@@ -1,5 +1,5 @@
 <template>
-  <b-col md="6" lg="3" class="mt-3">
+  <b-col lg="6" xl="3" class="mt-3">
     <img class="w-100" :src="item.imgUrl">
     <div class="content">
       <h3>{{item.title}}</h3>
@@ -22,6 +22,7 @@ export default {
 
     h3 {
       height: 100px;
+      overflow: hidden;
 
       font-size: 17px;
       font-weight: bold;

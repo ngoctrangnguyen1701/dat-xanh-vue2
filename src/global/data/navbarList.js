@@ -5,7 +5,7 @@ const navbarList = [
     linkList: [
       {
         label: 'Giới thiệu',
-        link: '/introduction/first',
+        link: '/introduction',
       },
       {
         label: 'Văn hóa doanh nghiệp',
@@ -35,7 +35,7 @@ const navbarList = [
     linkList: [
       {
         label: 'Cổ phiếu',
-        link: '/stock/first',
+        link: '/stock',
       },
       {
         label: 'Đại hội đồng cổ đông',

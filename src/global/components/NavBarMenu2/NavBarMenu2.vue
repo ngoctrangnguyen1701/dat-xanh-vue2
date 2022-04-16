@@ -1,13 +1,6 @@
 <template>
   <div class="wrapper">
     <div class="d-none d-lg-flex justify-content-between justify-content-xl-around border-bottom menu">
-      <!-- <router-link
-        v-for="(item, index) in list"
-        :key="index"
-        :to="item.link"
-        class="menu-item pt-5 pb-3 position-relative"
-        :class="item.link.includes($route.path) && 'active'"
-      > -->
       <router-link
         v-for="(item, index) in list"
         :key="index"
@@ -28,6 +21,7 @@
         {{menu}}
         <i class="fa-solid fa-angle-down position-absolute" style="right: 5px; top: 10px"></i>
       </div>
+      <!-- <b-collapse id="collapse-1" :class="showMenuCollapse ? 'show mt-2' : 'mt-2'"> -->
       <b-collapse id="collapse-1" class="mt-2">
         <b-card>
           <router-link
@@ -53,8 +47,14 @@ export default {
   data() {
     return {
       list: navbarList.find(item => item.labelParent === this.menu).linkList,
+      showMenuCollapse: false,
     }
   },
+  watch: {
+    $route() {
+      this.showMenuCollapse = !this.showMenuCollapse
+    }
+  }
 }
 </script>
 

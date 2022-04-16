@@ -2,7 +2,9 @@
   <section id="header-navbar" class="position-relative">
     <div class="wrapper py-3 py-lg-0">
       <div class="d-flex flex-wrap align-items-center">
-        <b-col cols="2" class="pl-0">LOGO</b-col>
+        <b-col cols="2" class="pl-0">
+          <router-link to="/">LOGO</router-link>
+        </b-col>
         <b-col cols="10" class="px-0">
           <b-row class="align-items-center justify-content-end justify-content-lg-between pr-3 pr-lg-0">
             <router-link to="/" class="text-white">
@@ -50,8 +52,7 @@
       class="bg-black-opacity"
       :style="showNavBarMobile && 'opacity: 1; z-index: 1000'"
     ></div>
-    <!-- <NavBarMobile :show="showNavBarMobile"/> -->
-    <NavBarMobile v-model="showNavBarMobile" @input="console.log($event)"/>
+    <NavBarMobile v-model="showNavBarMobile"/>
   </section>
 </template>
 

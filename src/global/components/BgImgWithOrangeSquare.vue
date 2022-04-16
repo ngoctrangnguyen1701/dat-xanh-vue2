@@ -7,7 +7,7 @@
       />
     </div>
     <div 
-      class="bg-orange d-none d-lg-block"
+      class="bg-orange d-none d-xl-block"
       v-local-custom:size="size"
       v-local-custom:left="left"
       v-local-custom:bottom="bottom"

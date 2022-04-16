@@ -1,7 +1,7 @@
 <template>
   <section class="outstanding-project" style="padding-bottom: 80px">
     <div class="wrapper">
-      <div class="d-flex flex-wrap">
+      <div class="d-flex flex-wrap align-items-center align-items-lg-top">
         <b-col lg="6" style="padding: 80px 0">
           <global-title
             title="DỰ ÁN NỔI BẬT"

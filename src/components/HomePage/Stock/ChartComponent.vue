@@ -15,6 +15,7 @@
     <div>
       <LineChart
         :chart-data="datacollection"
+        :height="200"
       /> 
     </div>
   </b-col>
