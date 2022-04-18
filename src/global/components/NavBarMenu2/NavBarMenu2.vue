@@ -21,7 +21,6 @@
         {{menu}}
         <i class="fa-solid fa-angle-down position-absolute" style="right: 5px; top: 10px"></i>
       </div>
-      <!-- <b-collapse id="collapse-1" :class="showMenuCollapse ? 'show mt-2' : 'mt-2'"> -->
       <b-collapse id="collapse-1" class="mt-2">
         <b-card>
           <router-link
@@ -50,11 +49,6 @@ export default {
       showMenuCollapse: false,
     }
   },
-  watch: {
-    $route() {
-      this.showMenuCollapse = !this.showMenuCollapse
-    }
-  }
 }
 </script>
 

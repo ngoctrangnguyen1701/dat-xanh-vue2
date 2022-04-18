@@ -62,7 +62,7 @@ const navbarList = [
     linkList: [
       {
         label: 'Gem Sky World',
-        link: '',
+        link: '/project/gem-sky-world',
       },
       {
         label: 'Opal Skyline',

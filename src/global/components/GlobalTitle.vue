@@ -31,9 +31,9 @@ export default {
   @import '@/scss/variables.scss';
 
   .title {
-    // text-align: center;
     color: $color-blue1;
-    font-size: 33px;
+    // font-size: 33px;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: bold;
     
     p {

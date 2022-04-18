@@ -6,10 +6,12 @@
     <div class="wrapper" style="margin-bottom: 80px">
       <b-row class="align-items-center">
         <b-col lg="4">
-          <h3 class="mb-4 font-weight-bold" v-style:fontSize="30" v-style:color="'#064d92'">DỰ ÁN MỚI</h3>
-          <h1 class="mb-4" v-style:fontSize="50" v-style:color="'#0066b3'">Gem Sky World</h1>
+          <h3 class="mb-4 font-weight-bold" v-style:color="'#064d92'" style="font-size: clamp(1.5rem, 2.5vw, 2rem)">DỰ ÁN MỚI</h3>
+          <h1 class="mb-4" style="font-size: clamp(2rem, 3vw, 3.5rem)" v-style:color="'#0066b3'">Gem Sky World</h1>
           <p class="my-4" v-style:fontSize="18">Được quy hoạch đồng bộ và hiện đại hàng đầu Long Thành, Khu đô thị thương mại giải trí Gem Sky World hứa hẹn sẽ là thế giới giải trí, mua sắm, ẩm thực và trải nghiệm cuộc sống mang tính toàn cầu cho những người trẻ năng động.</p>
-          <btn-read-more/>
+          <div class="mb-2">
+            <btn-read-more/>
+          </div>
         </b-col>
         <b-col lg="8">
           <bg-img-with-orange-square

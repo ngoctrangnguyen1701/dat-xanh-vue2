@@ -19,6 +19,7 @@ const ShareholderPage = () => import ('@/pages/StockPage/ShareholderPage')
 
 /* PROJECT */
 const ProjectPage = () => import('@/pages/ProjectPage/ProjectPage')
+const ProjectDetailPage = () => import('@/pages/ProjectDetailPage/ProjectDetailPage')
 
 const routes = [
   {
@@ -72,7 +73,11 @@ const routes = [
   },
   {
     path: '/project',
-    component: ProjectPage
+    component: ProjectPage,
+  },
+  {
+    path: '/project/:name',
+    component: ProjectDetailPage
   },
   {
     path: '*',
