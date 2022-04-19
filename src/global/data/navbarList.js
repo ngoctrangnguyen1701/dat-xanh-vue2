@@ -66,11 +66,15 @@ const navbarList = [
       },
       {
         label: 'Opal Skyline',
-        link: '',
+        link: '/project/opal-skyline',
       },
       {
         label: 'Opal Boulevard',
-        link: '',
+        link: '/project/opal-boulevard',
+      },
+      {
+        label: 'XEM TẤT CẢ',
+        link: '/project',
       },
     ]
   },
